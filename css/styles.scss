@@ -594,6 +594,9 @@ footer{
         }
     
         .social-media{
+            h4{
+                display: none;
+            }
             margin-top: 20px;
         
             border-top: 1px solid black;
@@ -644,6 +647,9 @@ footer{
             }
 
             div.social-media{
+                h4{
+                    display: block;
+                }
                 order: 3;
                 border-top: none;
             }

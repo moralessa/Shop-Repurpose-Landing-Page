@@ -631,6 +631,10 @@ footer div.footer-container .social-media {
   border-top: 1px solid black;
 }
 
+footer div.footer-container .social-media h4 {
+  display: none;
+}
+
 footer div.footer-container .social-media .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +690,9 @@ footer div.footer-container .social-media .icon-container .social-icon img {
         -ms-flex-order: 3;
             order: 3;
     border-top: none;
+  }
+  footer div.footer-container div.social-media h4 {
+    display: block;
   }
 }
 /*# sourceMappingURL=styles.css.map */
