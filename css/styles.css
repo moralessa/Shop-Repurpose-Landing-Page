@@ -161,6 +161,7 @@ section.how-it-works .desktop-layout {
 
 section.how-it-works .mobile-slider {
   height: 220px;
+  margin-bottom: 80px;
 }
 
 section.how-it-works .mobile-slider .swiper {
@@ -244,6 +245,7 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     display: -ms-flexbox;
     display: flex;
     margin: auto;
+    padding-left: 15px;
   }
   section.how-it-works .desktop-layout .left-side {
     width: 50%;
@@ -335,6 +337,7 @@ section.find-contact a {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    padding-left: 15px;
   }
   section.find-contact .wrapper .find-container, section.find-contact .wrapper .contact-container {
     position: relative;
@@ -479,6 +482,7 @@ section.about .right-side .sponsers .sponser-container img {
     width: 45%;
     position: absolute;
     left: 55%;
+    padding-right: 15px;
   }
   section.about .right-side .sponser-container {
     margin: 0 15px;
@@ -486,12 +490,6 @@ section.about .right-side .sponsers .sponser-container img {
 }
 
 section.make-a-difference {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 250px;
   background-color: #053B1F;
   position: relative;
@@ -499,32 +497,29 @@ section.make-a-difference {
 
 section.make-a-difference div.container {
   width: 100%;
-  position: relative;
+  height: 100%;
+  position: absolute;
+  top: 15%;
 }
 
 section.make-a-difference div.container h2 {
   font-family: 'Britanny', 'Times New Roman', Times, serif;
   color: #DDCDB6;
-  position: absolute;
-  top: 15%;
-  left: 20%;
+  text-align: center;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 section.make-a-difference div.container h3 {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  position: absolute;
-  position: absolute;
-  top: 42%;
-  left: 35%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 section.make-a-difference div.container button {
-  position: absolute;
-  top: 60%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,6 +556,9 @@ section.make-a-difference div.container button:hover {
   section.make-a-difference div.container {
     width: 700px;
     margin: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
   section.make-a-difference div.container h2 {
     position: static;
