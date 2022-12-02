@@ -48,7 +48,7 @@ header img {
 
 header .left-break, header .right-break {
   content: '';
-  width: 30%;
+  width: 40%;
   height: 1.5px;
   background-color: #053B1F;
   display: block;
@@ -66,6 +66,14 @@ section.video-container {
 
 .video-container img {
   width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 25px auto;
+  }
 }
 
 section.j-o-t {
@@ -87,6 +95,7 @@ section.j-o-t button {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  margin-bottom: 50px;
   border: none;
   padding: 10px;
   background-color: white;
@@ -99,6 +108,7 @@ section.j-o-t button {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  color: inherit;
 }
 
 section.j-o-t button:hover {
@@ -109,9 +119,32 @@ section.j-o-t button:hover {
           box-shadow: none;
 }
 
+@media only screen and (min-width: 1025px) {
+  section.j-o-t h2 {
+    font-size: 50px;
+  }
+  section.j-o-t h2 br {
+    display: none;
+  }
+  section.j-o-t p {
+    width: 800px;
+    margin: 25px auto;
+  }
+  section.j-o-t button {
+    font-size: 24px;
+  }
+  section.j-o-t hr {
+    display: none;
+  }
+}
+
 section.how-it-works {
   margin: 50px 0 25px 0;
   position: relative;
+}
+
+section.how-it-works section.aside-image {
+  display: none;
 }
 
 section.how-it-works h2 {
@@ -119,10 +152,15 @@ section.how-it-works h2 {
   text-align: center;
   color: #053B1F;
   font-weight: 600;
+  font-size: 30px;
+}
+
+section.how-it-works .desktop-layout {
+  display: none;
 }
 
 section.how-it-works .mobile-slider {
-  height: 210px;
+  height: 220px;
 }
 
 section.how-it-works .mobile-slider .swiper {
@@ -150,13 +188,18 @@ section.how-it-works .mobile-slider .swiper-slide {
           flex-direction: column;
 }
 
-section.how-it-works .mobile-slider .swiper-slide img {
+section.how-it-works .mobile-slider .swiper-slide svg {
   display: block;
   width: 80px;
   height: 80px;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 15px;
+}
+
+section.how-it-works .mobile-slider .swiper-slide .first-svg-icon-mobile {
+  width: 90px;
+  height: 90px;
 }
 
 section.how-it-works .mobile-slider .swiper-slide h5 {
@@ -178,9 +221,67 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   background-color: #053B1F;
 }
 
+@media only screen and (min-width: 1025px) {
+  section.how-it-works section.aside-image {
+    display: block;
+    width: 50%;
+    max-width: 650px;
+    height: 900px;
+    background-image: url("../images/Shoes JOT.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    border-radius: 15px;
+  }
+  section.how-it-works .mobile-slider {
+    display: none;
+  }
+  section.how-it-works .desktop-layout {
+    width: 100%;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  section.how-it-works .desktop-layout .left-side {
+    width: 50%;
+  }
+  section.how-it-works .desktop-layout .left-side h2 {
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+  }
+  section.how-it-works .desktop-layout .left-side .step-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  section.how-it-works .desktop-layout .left-side .icon-container {
+    margin-right: 20px;
+  }
+  section.how-it-works .desktop-layout .left-side .icon-container svg {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  section.how-it-works .desktop-layout .left-side .text-container {
+    float: right;
+  }
+}
+
 section.find-contact {
   background-color: #053B1F;
-  padding: 30px 20px;
+  padding: 70px 20px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,9 +309,9 @@ section.find-contact h3 {
   font-family: 'Britanny', 'Times New Roman', Times, serif;
   color: #DDCDB6;
   position: absolute;
-  top: -40px;
+  top: -60px;
   left: -30px;
-  font-size: 24px;
+  font-size: 30px;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
@@ -223,6 +324,29 @@ section.find-contact h4 {
 section.find-contact a {
   color: white;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.find-contact {
+    width: 100vw;
+    padding: 90px 20px;
+  }
+  section.find-contact .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  section.find-contact .wrapper .find-container, section.find-contact .wrapper .contact-container {
+    position: relative;
+    width: 100%;
+    margin: 50px auto 50px 30px;
+  }
+  section.find-contact .wrapper h3 {
+    font-size: 40px;
+    position: absolute;
+    top: -80px;
+    left: -35px;
+  }
 }
 
 section.social-good {
@@ -242,16 +366,29 @@ section.social-good {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 40px;
+  text-align: center;
+}
+
+section.social-good div.text-container {
+  width: 100%;
   position: relative;
 }
 
-section.social-good h2 {
+section.social-good div.text-container h2 {
   font-family: 'Britanny', 'Times New Roman', Times, serif;
-  position: absolute;
-  top: 55%;
-  left: 40%;
+  margin-top: 15px;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.social-good {
+    padding: 150px;
+  }
+  section.social-good div.text-container h3 {
+    font-size: 40px;
+  }
 }
 
 section.about {
@@ -260,22 +397,30 @@ section.about {
   text-align: center;
 }
 
-section.about h2 {
+section.about .left-side {
+  display: none;
+}
+
+section.about .right-side {
+  width: 100%;
+}
+
+section.about .right-side h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 20px;
 }
 
-section.about h4 {
+section.about .right-side h4 {
   color: black;
   font-family: 'Britanny', 'Times New Roman', Times, serif;
 }
 
-section.about h4 span {
+section.about .right-side h4 span {
   font-size: 24px;
   margin-left: 15px;
 }
 
-section.about .sponsers {
+section.about .right-side .sponsers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,25 +432,63 @@ section.about .sponsers {
       justify-content: space-around;
 }
 
-section.about .sponsers .sponser-container {
+section.about .right-side .sponsers .sponser-container {
   width: 33%;
 }
 
-section.about .sponsers .sponser-container img {
+section.about .right-side .sponsers .sponser-container img {
   width: 60px;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.about {
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 750px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    position: relative;
+  }
+  section.about .left-side {
+    display: block;
+    width: 50%;
+    max-width: 650px;
+    height: 800px;
+    background-image: url("../images/Priyanka JOT.jpeg");
+    background-size: cover;
+    position: absolute;
+    border-radius: 15px;
+  }
+  section.about .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45%;
+    position: absolute;
+    left: 55%;
+  }
+  section.about .right-side .sponser-container {
+    margin: 0 15px;
+  }
 }
 
 section.make-a-difference {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -314,7 +497,12 @@ section.make-a-difference {
   position: relative;
 }
 
-section.make-a-difference h2 {
+section.make-a-difference div.container {
+  width: 100%;
+  position: relative;
+}
+
+section.make-a-difference div.container h2 {
   font-family: 'Britanny', 'Times New Roman', Times, serif;
   color: #DDCDB6;
   position: absolute;
@@ -325,7 +513,7 @@ section.make-a-difference h2 {
   font-size: 30px;
 }
 
-section.make-a-difference h3 {
+section.make-a-difference div.container h3 {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: absolute;
@@ -334,7 +522,7 @@ section.make-a-difference h3 {
   left: 35%;
 }
 
-section.make-a-difference button {
+section.make-a-difference div.container button {
   position: absolute;
   top: 60%;
   text-align: center;
@@ -354,9 +542,10 @@ section.make-a-difference button {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  color: inherit;
 }
 
-section.make-a-difference button:hover {
+section.make-a-difference div.container button:hover {
   background-color: #053B1F;
   color: white;
   border: 1px solid white;
@@ -364,9 +553,42 @@ section.make-a-difference button:hover {
           box-shadow: none;
 }
 
+@media only screen and (min-width: 1025px) {
+  section.make-a-difference {
+    height: 350px;
+    padding-bottom: 20px;
+  }
+  section.make-a-difference div.container {
+    width: 700px;
+    margin: auto;
+  }
+  section.make-a-difference div.container h2 {
+    position: static;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+  section.make-a-difference div.container h3 {
+    position: static;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  section.make-a-difference div.container button {
+    position: static;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
 footer {
   background-color: white;
   padding: 10px 20px;
+}
+
+footer div.footer-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,38 +602,38 @@ footer {
   text-align: center;
 }
 
-footer .logo-container {
+footer div.footer-container .logo-container {
   width: 150px;
 }
 
-footer .logo-container img {
+footer div.footer-container .logo-container img {
   width: 100%;
 }
 
-footer .contact-info ul {
+footer div.footer-container .contact-info ul {
   list-style-type: none;
 }
 
-footer .contact-info li {
+footer div.footer-container .contact-info li {
   margin: 5px 0;
 }
 
-footer .contact-info a {
+footer div.footer-container .contact-info a {
   text-decoration: none;
   color: black;
 }
 
-footer .contact-info a h4 {
+footer div.footer-container .contact-info a h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
 }
 
-footer .social-media {
+footer div.footer-container .social-media {
   margin-top: 20px;
   border-top: 1px solid black;
 }
 
-footer .social-media .icon-container {
+footer div.footer-container .social-media .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,21 +644,50 @@ footer .social-media .icon-container {
           align-items: center;
 }
 
-footer .social-media .icon-container .social-icon {
+footer div.footer-container .social-media .icon-container .social-icon {
   width: 60px;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
 
-footer .social-media .icon-container .social-icon:hover {
+footer div.footer-container .social-media .icon-container .social-icon:hover {
   opacity: .5;
 }
 
-footer .social-media .icon-container div:nth-child(4) {
-  width: 30px;
+footer div.footer-container .social-media .icon-container .social-icon img {
+  width: 100%;
 }
 
-footer .social-media .icon-container .social-icon img {
-  width: 100%;
+@media only screen and (min-width: 1025px) {
+  footer div.footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 900px;
+    margin: auto;
+  }
+  footer div.footer-container div.logo-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer div.footer-container div.contact-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer div.footer-container div.contact-info ul li:nth-child(2), footer div.footer-container div.contact-info ul li:nth-child(3) {
+    line-height: 30px;
+  }
+  footer div.footer-container div.social-media {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-top: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
