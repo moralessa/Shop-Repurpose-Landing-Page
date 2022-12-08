@@ -46,7 +46,7 @@ header{
     align-items: center;
 
     img{
-        width: 90px;
+        width: 150px; //was 90px
         height: auto;
     }
 
@@ -227,7 +227,11 @@ section.how-it-works{
 }
 
 @media only screen and (min-width: 1025px) {
+    .font-weight-bold{
+        font-weight: 700;
+    }
     section.how-it-works{ 
+        margin: 100px 0 25px 0;
         section.aside-image{
             display: block;
             width: 50%;
@@ -255,7 +259,7 @@ section.how-it-works{
                     text-align: left;
                     font-size: 50px;
                     margin-bottom: 25px;
-                    margin-left: 50px;
+                    margin-left: 20px; //was 50px
                 }
                 .step-container{
                     display: flex;
@@ -329,7 +333,7 @@ section.find-contact{
 @media only screen and (min-width: 1025px) {
     section.find-contact{
         width: 100vw;
-        padding: 90px 20px;
+        padding: 75px 20px 00px 20px; //90px 20px
 
         .wrapper{
             width: 100%;
@@ -374,7 +378,8 @@ section.social-good{
             font-family: 'Britanny', 'Times New Roman', Times, serif;
             margin-top: 15px;
             transform: rotate(-5deg);
-            font-size: 30px;
+            font-size: 50px; //30px
+            margin-left: 511px;
         }
     }
 }
@@ -419,7 +424,7 @@ section.about{
         .sponsers{
             display: flex;
             margin: 0 20px;
-            align-items: center;
+            align-items: baseline;//center
             justify-content: space-around;
     
     
@@ -440,7 +445,7 @@ section.about{
         width: 100%;
         max-width: 1200px;
         display: flex;
-        height: 750px;
+        height: 604px;
         align-items: center;
         margin: auto;
         position: relative;
@@ -449,7 +454,7 @@ section.about{
             display: block;
             width: 50%;
             max-width: 650px;
-            height: 800px;
+            height: 659px;
             background-image: url('../images/Priyanka\ JOT.jpeg');
             background-size: cover;
             position: absolute;
@@ -505,7 +510,7 @@ section.make-a-difference{
             margin: auto;
             border: none;
             padding: 10px;
-            background-color: white;
+            background-color: #ddcdb6; //white
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 16px;
             font-weight: bold;
@@ -529,6 +534,7 @@ section.make-a-difference{
     section.make-a-difference{
         height: 350px;
         padding-bottom: 20px;
+        margin-top: 32px;
         div.container{
             width: 700px;
             margin: auto;
@@ -540,7 +546,7 @@ section.make-a-difference{
                 text-align: center;
                 font-size: 50px;
                 margin-bottom: 10px;
-                margin-left: -20px;
+                margin-left: -105px; //-20px
             }
         
             h3{
