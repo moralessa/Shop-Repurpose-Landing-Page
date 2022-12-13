@@ -3,6 +3,10 @@
   font-family: "Britanny";
   src: url("../fonts/BrittanySignature.ttf");
 }
+@font-face {
+  font-family: "Shelby";
+  src: url("../fonts/Shelby.otf");
+}
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -127,11 +131,11 @@ section.how-it-works section.aside-image {
   display: none;
 }
 section.how-it-works h2 {
-  font-family: "Britanny", "Times New Roman", Times, serif;
+  font-family: Shelby;
   text-align: center;
   color: #053B1F;
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 55px;
 }
 section.how-it-works .desktop-layout {
   display: none;
@@ -194,7 +198,7 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     width: 50%;
     max-width: 650px;
     height: 900px;
-    background-image: url("../images/black-sweater-image.jpeg");
+    background-image: url("../images/Laura Lewis JOT.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -216,9 +220,11 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   }
   section.how-it-works .desktop-layout .left-side h2 {
     text-align: left;
-    font-size: 50px;
+    font-size: 107px;
     margin-bottom: 25px;
     margin-left: 20px;
+    text-align: left;
+    transform: rotate(-5deg);
   }
   section.how-it-works .desktop-layout .left-side .step-container {
     display: flex;
@@ -257,13 +263,14 @@ section.find-contact .contact-container {
   margin-bottom: 0;
 }
 section.find-contact h3 {
-  font-family: "Britanny", "Times New Roman", Times, serif;
+  font-family: Shelby;
   color: #DDCDB6;
   position: absolute;
   top: -60px;
   left: -30px;
-  font-size: 30px;
-  transform: rotate(-20deg);
+  font-size: 55px;
+  font-weight: 400;
+  transform: rotate(-7deg);
 }
 section.find-contact h4 {
   color: white;
@@ -291,9 +298,9 @@ section.find-contact a {
     margin: 50px auto 50px 30px;
   }
   section.find-contact .wrapper h3 {
-    font-size: 40px;
+    font-size: 100px;
     position: absolute;
-    top: -80px;
+    top: -100px;
     left: -35px;
   }
 }
@@ -312,19 +319,92 @@ section.social-good div.text-container {
   position: relative;
 }
 section.social-good div.text-container h2 {
-  font-family: "Britanny", "Times New Roman", Times, serif;
-  margin-top: 15px;
+  font-family: Shelby;
+  margin-top: -3px;
   transform: rotate(-5deg);
-  font-size: 50px;
-  margin-left: 511px;
+  font-size: 55px;
+  margin-left: 210px;
+  font-weight: 400;
+}
+section.social-good div.text-container h3 {
+  width: 236px;
+  text-align: initial;
+  margin-top: 10px;
+  margin: auto;
 }
 
+@media only screen and (max-width: 500px) {
+  section.social-good {
+    padding: 150px 150px 112px 150px;
+  }
+  section.social-good div.text-container h2 {
+    font-family: Shelby;
+    margin-top: 3px;
+    transform: rotate(-5deg);
+    font-size: 55px;
+    margin-left: 72px;
+    font-weight: 400;
+  }
+}
 @media only screen and (min-width: 1025px) {
   section.social-good {
-    padding: 150px;
+    padding: 150px 150px 112px 150px;
   }
   section.social-good div.text-container h3 {
     font-size: 40px;
+    text-align: unset;
+    width: unset;
+    margin: unset;
+  }
+  section.social-good div.text-container h2 {
+    margin-left: 450px;
+    margin-top: 10px;
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 1216px) {
+  section.social-good {
+    padding: 150px 150px 112px 150px;
+  }
+  section.social-good div.text-container h3 {
+    font-size: 40px;
+    text-align: unset;
+    width: unset;
+    margin: unset;
+  }
+  section.social-good div.text-container h2 {
+    margin-left: 591px;
+    margin-top: 10px;
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 1292px) {
+  section.social-good {
+    padding: 150px 150px 112px 150px;
+  }
+  section.social-good div.text-container h3 {
+    font-size: 40px;
+    text-align: unset;
+    width: unset;
+    margin: unset;
+  }
+  section.social-good div.text-container h2 {
+    margin-left: 723px;
+  }
+}
+@media only screen and (min-width: 1460px) {
+  section.social-good {
+    padding: 150px 150px 112px 150px;
+  }
+  section.social-good div.text-container h3 {
+    font-size: 40px;
+    text-align: unset;
+    width: unset;
+    margin: unset;
+  }
+  section.social-good div.text-container h2 {
+    margin-top: -17px;
+    font-size: 140px;
   }
 }
 section.about {
@@ -344,7 +424,9 @@ section.about .right-side h2 {
 }
 section.about .right-side h4 {
   color: black;
-  font-family: "Britanny", "Times New Roman", Times, serif;
+  font-family: Shelby;
+  font-weight: 400;
+  font-size: 40px;
 }
 section.about .right-side h4 span {
   font-size: 24px;
@@ -369,7 +451,7 @@ section.about .right-side .sponsers .sponser-container img {
     width: 100%;
     max-width: 1200px;
     display: flex;
-    height: 604px;
+    height: 475px;
     align-items: center;
     margin: auto;
     position: relative;
@@ -378,7 +460,7 @@ section.about .right-side .sponsers .sponser-container img {
     display: block;
     width: 50%;
     max-width: 650px;
-    height: 659px;
+    height: 617px;
     background-image: url("../images/Priyanka JOT.jpeg");
     background-size: cover;
     position: absolute;
@@ -409,12 +491,13 @@ section.make-a-difference div.container {
   top: 15%;
 }
 section.make-a-difference div.container h2 {
-  font-family: "Britanny", "Times New Roman", Times, serif;
+  font-family: Shelby;
   color: #DDCDB6;
   text-align: center;
   transform: rotate(-5deg);
-  font-size: 30px;
+  font-size: 55px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 section.make-a-difference div.container h3 {
   color: white;
@@ -428,11 +511,11 @@ section.make-a-difference div.container button {
   margin: auto;
   border: none;
   padding: 10px;
-  background-color: #ddcdb6;
+  background-color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   font-weight: bold;
-  box-shadow: 2px 2px 2px #053B1F;
+  box-shadow: 2px 2px 2px #ddcdb6;
   border-radius: 5px;
   transition: all 500ms ease-in-out;
   cursor: pointer;
@@ -460,9 +543,10 @@ section.make-a-difference div.container button:hover {
   section.make-a-difference div.container h2 {
     position: static;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     margin-bottom: 10px;
-    margin-left: -105px;
+    margin-left: -439px;
+    margin-left: -439px;
   }
   section.make-a-difference div.container h3 {
     position: static;
@@ -474,6 +558,7 @@ section.make-a-difference div.container button:hover {
     position: static;
     text-align: center;
     font-size: 24px;
+    box-shadow: 2px 2px 2px #ddcdb6;
   }
 }
 footer {

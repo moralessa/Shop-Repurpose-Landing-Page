@@ -7,6 +7,10 @@ $green: #053B1F;
     font-family: 'Britanny';
     src: url('../fonts/BrittanySignature.ttf');
 }
+@font-face {
+    font-family: 'Shelby';
+    src: url('../fonts/Shelby.otf');
+}
 
 
 *, *::after, *::before{
@@ -150,11 +154,11 @@ section.how-it-works{
     margin: 50px 0 25px 0;
     position: relative;
     h2{
-        font-family: 'Britanny', 'Times New Roman', Times, serif;
+        font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
         text-align: center;
         color: $green;
-        font-weight: 600;
-        font-size: 30px;
+        font-weight: 500; //600
+        font-size: 55px //30px
     }
 
     .desktop-layout{
@@ -237,7 +241,7 @@ section.how-it-works{
             width: 50%;
             max-width: 650px;
             height: 900px;
-            background-image: url('../images/black-sweater-image.jpeg');
+            background-image: url('../images/Laura Lewis JOT.png');
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
@@ -257,9 +261,11 @@ section.how-it-works{
                 width: 50%;
                 h2{
                     text-align: left;
-                    font-size: 50px;
+                    font-size: 107px; //50px
                     margin-bottom: 25px;
                     margin-left: 20px; //was 50px
+                    text-align: left;
+                    transform: rotate(-5deg);
                 }
                 .step-container{
                     display: flex;
@@ -310,13 +316,14 @@ section.find-contact{
     }
 
     h3{
-        font-family: 'Britanny', 'Times New Roman', Times, serif;
+        font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
         color: $darkBeige;
         position: absolute;
         top: -60px;
         left: -30px;
-        font-size: 30px;
-        transform: rotate(-20deg);
+        font-size: 55px; //30px
+        font-weight: 400;
+        transform: rotate(-7deg); //rotate(-20deg)
     }
 
     h4{
@@ -349,14 +356,15 @@ section.find-contact{
 
             
             h3{
-                font-size: 40px;
+                font-size: 100px; //40px
                 position: absolute;
-                top: -80px;
+                top: -100px; //-80px
                 left: -35px;
             }
         }
     }
 }
+
 
 
 //Social Good Section mobile
@@ -375,25 +383,109 @@ section.social-good{
         position: relative;
 
         h2{
-            font-family: 'Britanny', 'Times New Roman', Times, serif;
-            margin-top: 15px;
+            font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
+            margin-top: -3px; //15px
             transform: rotate(-5deg);
-            font-size: 50px; //30px
-            margin-left: 511px;
+            font-size: 55px;//30px;
+            margin-left: 210px; //97px
+            font-weight: 400;
+        }
+        h3{
+            width: 236px;
+            text-align: initial;
+            margin-top: 10px;
+            margin: auto;
         }
     }
+}
+@media only screen and (max-width: 500px) {
+    section.social-good{
+    padding: 150px 150px 112px 150px;
+    div.text-container{
+        h2{
+            font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
+            margin-top: 3px; //15px
+            transform: rotate(-5deg);
+            font-size: 55px;//30px;
+            margin-left: 72px; //97px
+            font-weight: 400;
+        }
+    }
+}
 }
 
 @media only screen and (min-width: 1025px) {
     section.social-good{
-    padding: 150px;
+    padding: 150px 150px 112px 150px;
     div.text-container{
         h3{
             font-size: 40px;
+            text-align: unset;
+            width: unset;
+            margin: unset;
+        }
+        h2{
+            margin-left: 450px;//641px //511px
+            margin-top: 10px;
+            font-size: 100px;//50px
         }
     }
 }
 }
+@media only screen and (min-width: 1216px) {
+    section.social-good{
+    padding: 150px 150px 112px 150px;
+    div.text-container{
+        h3{
+            font-size: 40px;
+            text-align: unset;
+            width: unset;
+            margin: unset;
+        }
+        h2{
+            margin-left: 591px; //511px
+            margin-top: 10px;
+            font-size: 100px;//50px
+        }
+    }
+}
+}
+
+@media only screen and (min-width: 1292px) {
+    section.social-good{
+    padding: 150px 150px 112px 150px;
+    div.text-container{
+        h3{
+            font-size: 40px;
+            text-align: unset;
+            width: unset;
+            margin: unset;
+        }
+        h2{
+            margin-left: 723px;
+        }
+    }
+}
+}
+@media only screen and (min-width: 1460px) {
+    section.social-good{
+    padding: 150px 150px 112px 150px;
+    div.text-container{
+        h3{
+            font-size: 40px;
+            text-align: unset;
+            width: unset;
+            margin: unset;
+        }
+        h2{
+            //margin-left: 620px;
+            margin-top: -17px;
+            font-size: 140px;
+        }
+    }
+}
+}
+
 
 
 //About Section mobile 
@@ -413,7 +505,9 @@ section.about{
     
         h4{
             color: black;
-            font-family: 'Britanny', 'Times New Roman', Times, serif;
+            font-family: Shelby;//'Britanny', 'Times New Roman', Times, serif
+            font-weight: 400;
+            font-size: 40px;
     
             & span{
                 font-size: 24px;
@@ -445,7 +539,7 @@ section.about{
         width: 100%;
         max-width: 1200px;
         display: flex;
-        height: 604px;
+        height: 475px; //604px
         align-items: center;
         margin: auto;
         position: relative;
@@ -454,7 +548,7 @@ section.about{
             display: block;
             width: 50%;
             max-width: 650px;
-            height: 659px;
+            height: 617px; //659px
             background-image: url('../images/Priyanka\ JOT.jpeg');
             background-size: cover;
             position: absolute;
@@ -489,12 +583,13 @@ section.make-a-difference{
         position: absolute;
         top: 15%;
         h2{
-            font-family: 'Britanny', 'Times New Roman', Times, serif;
+            font-family:Shelby; //'Britanny', 'Times New Roman', Times, serif
             color: $darkBeige;
             text-align: center;
             transform: rotate(-5deg);
-            font-size: 30px;
+            font-size: 55px; //30px
             margin-bottom: 10px;
+            font-weight: 400;
         }
     
         h3{
@@ -510,11 +605,11 @@ section.make-a-difference{
             margin: auto;
             border: none;
             padding: 10px;
-            background-color: #ddcdb6; //white
+            background-color: white;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 16px;
             font-weight: bold;
-            box-shadow: 2px 2px 2px $green;
+            box-shadow: 2px 2px 2px #ddcdb6;
             border-radius: 5px;
             transition: all 500ms ease-in-out;
             cursor: pointer;
@@ -544,9 +639,10 @@ section.make-a-difference{
             h2{
                 position: static;
                 text-align: center;
-                font-size: 50px;
+                font-size: 100px; //50px
                 margin-bottom: 10px;
-                margin-left: -105px; //-20px
+                margin-left: -439px; //-20px
+                margin-left: -439px;
             }
         
             h3{
@@ -560,6 +656,7 @@ section.make-a-difference{
                 position: static;
                 text-align: center;
                 font-size: 24px;
+                box-shadow: 2px 2px 2px #ddcdb6;
             }
         }
     }
