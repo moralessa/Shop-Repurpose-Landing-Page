@@ -43,6 +43,10 @@ p{
     font-size: 16px;
 }
 
+section{
+    padding: 0 50px;
+}
+
 //Header 
 header{
     display: flex;
@@ -245,7 +249,7 @@ section.how-it-works{
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
-            left: 55%;
+            left: 50%;
             border-radius: 15px;
         }
         .mobile-slider{
@@ -258,7 +262,7 @@ section.how-it-works{
             margin: auto;
             padding-left: 15px;
             .left-side{
-                width: 50%;
+                width: 45%;
                 h2{
                     text-align: left;
                     font-size: 107px; //50px

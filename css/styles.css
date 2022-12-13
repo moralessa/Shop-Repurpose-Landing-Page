@@ -40,6 +40,10 @@ p {
   font-size: 16px;
 }
 
+section {
+  padding: 0 50px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +252,7 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    left: 55%;
+    left: 50%;
     border-radius: 15px;
   }
   section.how-it-works .mobile-slider {
@@ -264,7 +268,7 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     padding-left: 15px;
   }
   section.how-it-works .desktop-layout .left-side {
-    width: 50%;
+    width: 45%;
   }
   section.how-it-works .desktop-layout .left-side h2 {
     text-align: left;
