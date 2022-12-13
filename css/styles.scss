@@ -79,7 +79,7 @@ section.video-container{
     section.video-container{
         width: 100%;
         max-width: 1200px;
-        margin: 25px auto;
+        margin: 25px auto 50px auto;
     }
 }
 
@@ -245,7 +245,7 @@ section.how-it-works{
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
-            left: 50%;
+            left: 55%;
             border-radius: 15px;
         }
         .mobile-slider{
@@ -375,48 +375,20 @@ section.social-good{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    padding: 20px;
     text-align: center;
 
     div.text-container{
         width: 100%;
         position: relative;
+    }
+}
 
-        h2{
-            font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
-            margin-top: -3px; //15px
-            transform: rotate(-5deg);
-            font-size: 55px;//30px;
-            margin-left: 210px; //97px
-            font-weight: 400;
-        }
-        h3{
-            width: 236px;
-            text-align: initial;
-            margin-top: 10px;
-            margin: auto;
-        }
-    }
-}
-@media only screen and (max-width: 500px) {
-    section.social-good{
-    padding: 150px 150px 112px 150px;
-    div.text-container{
-        h2{
-            font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
-            margin-top: 3px; //15px
-            transform: rotate(-5deg);
-            font-size: 55px;//30px;
-            margin-left: 72px; //97px
-            font-weight: 400;
-        }
-    }
-}
-}
 
 @media only screen and (min-width: 1025px) {
     section.social-good{
-    padding: 150px 150px 112px 150px;
+    padding: 150px;
+    margin-bottom: 20px;
     div.text-container{
         h3{
             font-size: 40px;
@@ -425,68 +397,15 @@ section.social-good{
             margin: unset;
         }
         h2{
-            margin-left: 450px;//641px //511px
-            margin-top: 10px;
+            font-family: Shelby;
+            margin-left: 60%;
+            margin-top: 20px;
             font-size: 100px;//50px
+            font-weight: 400;
         }
     }
 }
 }
-@media only screen and (min-width: 1216px) {
-    section.social-good{
-    padding: 150px 150px 112px 150px;
-    div.text-container{
-        h3{
-            font-size: 40px;
-            text-align: unset;
-            width: unset;
-            margin: unset;
-        }
-        h2{
-            margin-left: 591px; //511px
-            margin-top: 10px;
-            font-size: 100px;//50px
-        }
-    }
-}
-}
-
-@media only screen and (min-width: 1292px) {
-    section.social-good{
-    padding: 150px 150px 112px 150px;
-    div.text-container{
-        h3{
-            font-size: 40px;
-            text-align: unset;
-            width: unset;
-            margin: unset;
-        }
-        h2{
-            margin-left: 723px;
-        }
-    }
-}
-}
-@media only screen and (min-width: 1460px) {
-    section.social-good{
-    padding: 150px 150px 112px 150px;
-    div.text-container{
-        h3{
-            font-size: 40px;
-            text-align: unset;
-            width: unset;
-            margin: unset;
-        }
-        h2{
-            //margin-left: 620px;
-            margin-top: -17px;
-            font-size: 140px;
-        }
-    }
-}
-}
-
-
 
 //About Section mobile 
 section.about{
@@ -539,7 +458,7 @@ section.about{
         width: 100%;
         max-width: 1200px;
         display: flex;
-        height: 475px; //604px
+        height: 604px; //604px
         align-items: center;
         margin: auto;
         position: relative;
@@ -548,7 +467,7 @@ section.about{
             display: block;
             width: 50%;
             max-width: 650px;
-            height: 617px; //659px
+            height: 750px;
             background-image: url('../images/Priyanka\ JOT.jpeg');
             background-size: cover;
             position: absolute;
@@ -563,6 +482,10 @@ section.about{
             position: absolute;
             left: 55%;
             padding-right: 15px;
+
+            h2{
+                font-size: 40px;
+            }
 
             .sponser-container{
                 margin: 0 15px;
@@ -641,8 +564,7 @@ section.make-a-difference{
                 text-align: center;
                 font-size: 100px; //50px
                 margin-bottom: 10px;
-                margin-left: -439px; //-20px
-                margin-left: -439px;
+                margin-left: -40%; //-20px
             }
         
             h3{
