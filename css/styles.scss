@@ -70,9 +70,10 @@ header{
 
 //Video Container
 section.video-container{
-    margin: 0 20px;
+    margin: 0; //0 20px
     display: flex;
     justify-content: center;
+    padding: 0 25px;
 }
 
 .video-container img{
@@ -90,6 +91,7 @@ section.video-container{
 //Just one thing mobile
 section.j-o-t{
     margin: 25px 0;
+    padding: 0 50px;
     h2{
         text-align: center;
     }
@@ -183,7 +185,7 @@ section.how-it-works{
           .swiper-slide {
             text-align: center;
             font-size: 18px;
-            margin-top: 25px;
+            margin-top: 0; //25px
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -247,13 +249,13 @@ section.how-it-works{
             display: block;
             width: 50%;
             max-width: 650px;
-            height: 900px;
+            height: 889px; //900px
             background-image: url('../images/Laura Lewis JOT.png');
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
             left: 50%;
-            border-radius: 15px;
+            border-radius: 0; //15px
         }
         .mobile-slider{
             display: none;
@@ -263,7 +265,71 @@ section.how-it-works{
             max-width: 1200px;
             display: flex;
             margin: auto;
-            padding-left: 15px;
+            padding-left: 0; //15px
+            .left-side{
+                width: 45%;
+                h2{
+                    text-align: left;
+                    font-size: 100px; //50px
+                    margin-bottom: 25px;
+                    text-align: left;
+                    transform: rotate(-5deg);
+                }
+                .step-container{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    
+                }
+    
+                .icon-container{
+                    margin-right: 20px;
+                    svg{
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        background-color: white;
+                        border-radius: 15px;
+                        margin-bottom: 15px;
+                        
+                    }
+                }
+
+                .text-container{
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1306px) {
+    .font-weight-bold{
+        font-weight: 700;
+    }
+    section.how-it-works{ 
+        margin: 100px 0 25px 0;
+        section.aside-image{
+            display: block;
+            width: 50%;
+            max-width: 650px;
+            height: 889px; //900px
+            background-image: url('../images/Laura Lewis JOT.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 47%; //50%
+            border-radius: 0; //15px
+        }
+        .mobile-slider{
+            display: none;
+        }
+        .desktop-layout{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            margin: auto;
+            padding-left: 0; //15px
             .left-side{
                 width: 45%;
                 h2{
@@ -302,6 +368,7 @@ section.how-it-works{
 }
 
 
+
 //Find Contact Section 
 section.find-contact{
     background-color: $green;
@@ -314,7 +381,7 @@ section.find-contact{
     .find-container, .contact-container{
         position: relative;
         width: 70%;
-        margin: 25px auto 50px auto;
+        margin: 25px 34px 50px auto; //25px auto 50px auto
     }
 
     .contact-container{
@@ -349,7 +416,7 @@ section.find-contact{
         padding: 75px 20px 00px 20px; //90px 20px
 
         .wrapper{
-            width: 100%;
+            width: 96%; //100%
             max-width: 1200px;
             margin: auto;
             padding-left: 15px;
@@ -373,11 +440,12 @@ section.find-contact{
 
 
 
+
 //Social Good Section mobile
 section.social-good{
     background-color: white;
     height: 200px;
-    display: flex;
+    display: none; //flex
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -402,6 +470,7 @@ section.social-good{
     section.social-good{
     padding: 150px;
     margin-bottom: 20px;
+    display: flex;
     div.text-container{
         h3{
             font-size: 40px;
@@ -483,7 +552,7 @@ section.about{
         width: 100%;
         max-width: 1200px;
         display: flex;
-        height: 604px; //604px
+        height: 454px; //604px
         align-items: center;
         margin: auto;
         position: relative;
@@ -492,7 +561,7 @@ section.about{
             display: block;
             width: 50%;
             max-width: 650px;
-            height: 750px;
+            height: 641px;
             background-image: url('../images/Priyanka\ JOT.jpeg');
             background-size: cover;
             position: absolute;
@@ -505,7 +574,7 @@ section.about{
             align-items: center;
             width: 45%;
             position: absolute;
-            left: 55%;
+            left: 53%; //55%
             padding-right: 15px;
 
             h2{
@@ -517,6 +586,21 @@ section.about{
             .sponser-container{
                 margin: 0 15px;
             }
+        }
+ }      
+}
+
+@media only screen and (min-width: 1317px) {
+    section.about{
+        .right-side{
+            left: 56%; //55%
+        }
+ }      
+}
+@media only screen and (min-width: 1412px) {
+    section.about{
+        .right-side{
+            left: 59%; //55%
         }
  }      
 }
@@ -594,8 +678,8 @@ section.make-a-difference{
                 position: static;
                 text-align: center;
                 font-size: 90px; //50px
-                margin-bottom: 10px;
-                margin-left: -392px; //-20px
+                margin-bottom: -14px; //10px
+                margin-left: -384px; //-392px
             }
         
             h3{
@@ -603,7 +687,7 @@ section.make-a-difference{
                 text-align: center;
                 font-size: 35px;
                 margin-bottom: 20px;
-                margin-left: 52px;
+                margin-left: 67px; //52px
             }
 
             button{
@@ -657,7 +741,7 @@ footer{
     
         hr{
             border-top: 1px solid black;
-            width: 82%;
+            width: 84%;
             margin-top: 20px;
         }
         .social-media{
