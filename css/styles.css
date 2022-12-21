@@ -6,6 +6,8 @@
 @font-face {
   font-family: "Shelby";
   src: url("../fonts/Shelby.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 *, *::after, *::before {
   box-sizing: border-box;
@@ -144,7 +146,7 @@ section.how-it-works h2 {
   font-family: Shelby;
   text-align: center;
   color: #053B1F;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 55px;
 }
 section.how-it-works .desktop-layout {
@@ -196,6 +198,18 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   background-color: #053B1F;
 }
 
+@media only screen and (max-width: 324px) {
+  section.how-it-works .mobile-slider {
+    height: 268px;
+    margin-bottom: 90px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  section.how-it-works .mobile-slider {
+    height: 298px;
+    margin-bottom: 151px;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .font-weight-bold {
     font-weight: 700;
@@ -214,6 +228,7 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     position: absolute;
     left: 50%;
     border-radius: 0;
+    transform: translateY(0.2%);
   }
   section.how-it-works .mobile-slider {
     display: none;
@@ -254,8 +269,73 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   section.how-it-works .desktop-layout .left-side .text-container {
     float: right;
   }
+  section.how-it-works .desktop-layout .left-side .step-container:nth-child(2) .text-container p {
+    margin-top: -7px;
+  }
+  section.how-it-works .desktop-layout .left-side .step-container:nth-child(3) .text-container p {
+    margin-top: -12px;
+  }
+  section.how-it-works .desktop-layout .left-side .step-container:nth-child(4) .text-container p {
+    margin-top: -13px;
+  }
 }
 @media only screen and (min-width: 1306px) {
+  .font-weight-bold {
+    font-weight: 700;
+  }
+  section.how-it-works {
+    margin: 100px 0 25px 0;
+  }
+  section.how-it-works .mobile-slider {
+    display: none;
+  }
+  section.how-it-works .desktop-layout {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    padding-left: 0;
+  }
+  section.how-it-works .desktop-layout .left-side {
+    width: 45%;
+  }
+  section.how-it-works .desktop-layout .left-side h2 {
+    text-align: left;
+    font-size: 100px;
+    margin-bottom: 25px;
+    text-align: left;
+    transform: rotate(-5deg);
+  }
+  section.how-it-works .desktop-layout .left-side .step-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  section.how-it-works .desktop-layout .left-side .icon-container {
+    margin-right: 20px;
+  }
+  section.how-it-works .desktop-layout .left-side .icon-container svg {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  section.how-it-works .desktop-layout .left-side .text-container {
+    float: right;
+  }
+  section.how-it-works .desktop-layout .left-side .step-container:nth-child(2) .text-container p {
+    margin-top: -7px;
+  }
+  section.how-it-works .desktop-layout .left-side .step-container:nth-child(3) .text-container p {
+    margin-top: -12px;
+  }
+  section.how-it-works .desktop-layout .left-side .step-container:nth-child(4) .text-container p {
+    margin-top: -13px;
+  }
+}
+@media only screen and (min-width: 1400px) {
   .font-weight-bold {
     font-weight: 700;
   }
@@ -273,45 +353,49 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     position: absolute;
     left: 47%;
     border-radius: 0;
+    transform: translateY(0.11%);
   }
-  section.how-it-works .mobile-slider {
-    display: none;
+}
+@media only screen and (min-width: 1600px) {
+  .font-weight-bold {
+    font-weight: 700;
   }
-  section.how-it-works .desktop-layout {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    margin: auto;
-    padding-left: 0;
+  section.how-it-works {
+    margin: 100px 0 25px 0;
   }
-  section.how-it-works .desktop-layout .left-side {
-    width: 45%;
-  }
-  section.how-it-works .desktop-layout .left-side h2 {
-    text-align: left;
-    font-size: 100px;
-    margin-bottom: 25px;
-    text-align: left;
-    transform: rotate(-5deg);
-  }
-  section.how-it-works .desktop-layout .left-side .step-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  section.how-it-works .desktop-layout .left-side .icon-container {
-    margin-right: 20px;
-  }
-  section.how-it-works .desktop-layout .left-side .icon-container svg {
+  section.how-it-works section.aside-image {
     display: block;
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    border-radius: 15px;
-    margin-bottom: 15px;
+    width: 50%;
+    max-width: 650px;
+    height: 889px;
+    background-image: url("../images/Laura Lewis JOT.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 47%;
+    border-radius: 0;
+    transform: translateY(0.7%);
   }
-  section.how-it-works .desktop-layout .left-side .text-container {
-    float: right;
+}
+@media only screen and (min-width: 1900px) {
+  .font-weight-bold {
+    font-weight: 700;
+  }
+  section.how-it-works {
+    margin: 100px 0 25px 0;
+  }
+  section.how-it-works section.aside-image {
+    display: block;
+    width: 50%;
+    max-width: 650px;
+    height: 889px;
+    background-image: url("../images/Laura Lewis JOT.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 47%;
+    border-radius: 0;
+    transform: translateY(0.35%);
   }
 }
 section.find-contact {
@@ -389,6 +473,7 @@ section.social-good div.text-container {
 section.social-good div.text-container h2 {
   font-family: Shelby;
   font-size: 40px;
+  font-weight: 400;
 }
 section.social-good div.text-container h3 {
   font-size: 16px;
@@ -522,6 +607,18 @@ section.make-a-difference div.container {
   top: 15%;
   right: 0;
 }
+section.make-a-difference div.container .are-you-ready-text-2 {
+  display: none;
+  transform: rotate(0deg);
+}
+section.make-a-difference div.container .are-you-ready-text-2-mobile {
+  transform: rotate(0deg);
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
 section.make-a-difference div.container h2 {
   font-family: Shelby;
   color: #DDCDB6;
@@ -530,12 +627,14 @@ section.make-a-difference div.container h2 {
   font-size: 55px;
   margin-bottom: 10px;
   font-weight: 400;
+  display: none;
 }
 section.make-a-difference div.container h3 {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   margin-bottom: 20px;
+  display: none;
 }
 section.make-a-difference div.container button {
   text-align: center;
@@ -571,10 +670,21 @@ section.make-a-difference div.container button:hover {
     margin-top: 32px;
   }
   section.make-a-difference div.container {
-    width: 700px;
+    width: 100%;
     margin: auto;
     left: 50%;
     transform: translate(-50%);
+  }
+  section.make-a-difference div.container .are-you-ready-text-2 {
+    display: block;
+    font-size: 67px;
+    width: unset;
+    margin: auto;
+    margin-top: 44px;
+    margin-bottom: 20px;
+  }
+  section.make-a-difference div.container .are-you-ready-text-2-mobile {
+    display: none;
   }
   section.make-a-difference div.container h2 {
     position: static;
@@ -582,6 +692,7 @@ section.make-a-difference div.container button:hover {
     font-size: 90px;
     margin-bottom: -14px;
     margin-left: -384px;
+    display: none;
   }
   section.make-a-difference div.container h3 {
     position: static;
@@ -589,6 +700,7 @@ section.make-a-difference div.container button:hover {
     font-size: 35px;
     margin-bottom: 20px;
     margin-left: 67px;
+    display: none;
   }
   section.make-a-difference div.container button {
     position: static;
@@ -650,6 +762,9 @@ footer div.footer-container .social-media .icon-container .social-icon:hover {
 }
 footer div.footer-container .social-media .icon-container .social-icon img {
   width: 100%;
+}
+footer div.footer-container .social-media .icon-container .social-icon:nth-child(4) a img {
+  height: 27px;
 }
 
 @media only screen and (min-width: 1025px) {

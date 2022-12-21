@@ -10,6 +10,8 @@ $green: #053B1F;
 @font-face {
     font-family: 'Shelby';
     src: url('../fonts/Shelby.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -166,7 +168,7 @@ section.how-it-works{
         font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
         text-align: center;
         color: $green;
-        font-weight: 500; //600
+        font-weight: 400; //600
         font-size: 55px //30px
     }
 
@@ -238,7 +240,24 @@ section.how-it-works{
 
     }
 }
-
+//Fix for the three dot button
+@media only screen and (max-width: 324px) {
+    section.how-it-works{
+       .mobile-slider{
+        height: 268px;
+        margin-bottom: 90px;
+       }
+    }
+}
+//Fix for the three dot button
+@media only screen and (max-width: 280px) {
+    section.how-it-works{
+       .mobile-slider{
+        height: 298px;
+        margin-bottom: 151px;
+       }
+    }
+}
 @media only screen and (min-width: 1025px) {
     .font-weight-bold{
         font-weight: 700;
@@ -249,13 +268,14 @@ section.how-it-works{
             display: block;
             width: 50%;
             max-width: 650px;
-            height: 889px; //900px
-            background-image: url('../images/Laura Lewis JOT.png');
+            height: 889px;//696px;
+            background-image: url("../images/Laura Lewis JOT.png");
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
             left: 50%;
-            border-radius: 0; //15px
+            border-radius: 0;
+            transform: translateY(0.2%);//translateY(calc(50.35% - 22.15%));
         }
         .mobile-slider{
             display: none;
@@ -281,7 +301,7 @@ section.how-it-works{
                     margin-bottom: 10px;
                     
                 }
-    
+
                 .icon-container{
                     margin-right: 20px;
                     svg{
@@ -298,6 +318,17 @@ section.how-it-works{
                 .text-container{
                     float: right;
                 }
+            }
+
+            //Used to fixed alignment issue
+            .left-side .step-container:nth-child(2) .text-container p{
+                margin-top: -7px;
+            }
+            .left-side .step-container:nth-child(3) .text-container p{
+                margin-top: -12px;
+            }
+            .left-side .step-container:nth-child(4) .text-container p{
+                margin-top: -13px;
             }
         }
     }
@@ -309,18 +340,6 @@ section.how-it-works{
     }
     section.how-it-works{ 
         margin: 100px 0 25px 0;
-        section.aside-image{
-            display: block;
-            width: 50%;
-            max-width: 650px;
-            height: 889px; //900px
-            background-image: url('../images/Laura Lewis JOT.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 47%; //50%
-            border-radius: 0; //15px
-        }
         .mobile-slider{
             display: none;
         }
@@ -363,6 +382,80 @@ section.how-it-works{
                     float: right;
                 }
             }
+            //Used to fixed alignment issue
+            .left-side .step-container:nth-child(2) .text-container p{
+                margin-top: -7px;
+            }
+            .left-side .step-container:nth-child(3) .text-container p{
+                margin-top: -12px;
+            }
+            .left-side .step-container:nth-child(4) .text-container p{
+                margin-top: -13px;
+            }
+
+        }
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .font-weight-bold{
+        font-weight: 700;
+    }
+    section.how-it-works{ 
+        margin: 100px 0 25px 0;
+        section.aside-image{
+            display: block;
+            width: 50%;
+            max-width: 650px;
+            height: 889px;//696px;
+            background-image: url("../images/Laura Lewis JOT.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 47%;
+            border-radius: 0;
+            transform: translateY(0.11%);
+        }
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .font-weight-bold{
+        font-weight: 700;
+    }
+    section.how-it-works{ 
+        margin: 100px 0 25px 0;
+        section.aside-image{
+            display: block;
+            width: 50%;
+            max-width: 650px;
+            height: 889px;//696px;
+            background-image: url("../images/Laura Lewis JOT.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 47%;
+            border-radius: 0;
+            transform: translateY(0.7%);
+        }
+    }
+}
+@media only screen and (min-width: 1900px) {
+    .font-weight-bold{
+        font-weight: 700;
+    }
+    section.how-it-works{ 
+        margin: 100px 0 25px 0;
+        section.aside-image{
+            display: block;
+            width: 50%;
+            max-width: 650px;
+            height: 889px;//696px;
+            background-image: url("../images/Laura Lewis JOT.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 47%;
+            border-radius: 0;
+            transform: translateY(0.35%);
         }
     }
 }
@@ -458,6 +551,7 @@ section.social-good{
         h2{
             font-family: Shelby;
             font-size: 40px;
+            font-weight: 400;
         }
         h3{
             font-size: 16px;
@@ -617,6 +711,18 @@ section.make-a-difference{
         position: absolute;
         top: 15%;
         right: 0;
+        .are-you-ready-text-2{
+            display: none;
+            transform: rotate(0deg);
+        }
+        .are-you-ready-text-2-mobile{
+            transform: rotate(0deg);
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
         h2{
             font-family:Shelby; //'Britanny', 'Times New Roman', Times, serif
             color: $darkBeige;
@@ -625,6 +731,7 @@ section.make-a-difference{
             font-size: 55px; //30px
             margin-bottom: 10px;
             font-weight: 400;
+            display: none;
         }
     
         h3{
@@ -632,6 +739,7 @@ section.make-a-difference{
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
             margin-bottom: 20px;
+            display: none;
         }
     
         button{
@@ -669,17 +777,29 @@ section.make-a-difference{
         padding-bottom: 20px;
         margin-top: 32px;
         div.container{
-            width: 700px;
+            width: 100%; //700px
             margin: auto;
             left:50%;
             transform: translate(-50%);
-
+            
+            .are-you-ready-text-2{
+                display: block;
+                font-size: 67px;
+                width: unset;
+                margin: auto;
+                margin-top: 44px;
+                margin-bottom: 20px;
+            }
+            .are-you-ready-text-2-mobile{
+                display: none;
+            }
             h2{
                 position: static;
                 text-align: center;
                 font-size: 90px; //50px
                 margin-bottom: -14px; //10px
                 margin-left: -384px; //-392px
+                display: none;
             }
         
             h3{
@@ -688,6 +808,7 @@ section.make-a-difference{
                 font-size: 35px;
                 margin-bottom: 20px;
                 margin-left: 67px; //52px
+                display: none;
             }
 
             button{
@@ -748,6 +869,7 @@ footer{
             h4{
                 display: none;
             }
+            
             .icon-container{
                 display: flex;
                 justify-content: space-around;
@@ -766,6 +888,10 @@ footer{
                 .social-icon img{
                     width: 100%
                 }
+            }
+            //Fixes pinterest size issue
+            .icon-container .social-icon:nth-child(4) a img{
+                height: 27px;
             }
         }
     }
