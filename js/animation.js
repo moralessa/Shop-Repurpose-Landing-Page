@@ -31,15 +31,9 @@ gsap.from("#social-good-text",{
     opacity: 0,
     stagger: .5
 })
-gsap.from("#are-you-ready-text",{
-    scrollTrigger: "#are-you-ready-text",
+gsap.from("#are-you-ready-text-2",{
+    scrollTrigger: "#are-you-ready-text-2",
     duration: 3,  
-    ease: "power4.out",
-    opacity: 0,
-})
-gsap.from("#make-a-difference-text",{
-    scrollTrigger: "#make-a-difference-text",
-    duration: 2,
     ease: "power4.out",
     opacity: 0,
 })
