@@ -93,7 +93,7 @@ section.video-container{
 //Just one thing mobile
 section.j-o-t{
     margin: 25px 0;
-    padding: 0 50px;
+    padding: 0 20px;
     h2{
         text-align: center;
     }
@@ -182,6 +182,7 @@ section.how-it-works{
         .swiper {
             width: 100%;
             height: 100%;
+            padding-bottom: 20px;
           }
     
           .swiper-slide {
@@ -223,6 +224,13 @@ section.how-it-works{
 
             P{
                 margin: 0 30px;
+            }
+
+            br{
+                display: none;
+                @media only screen and (min-width: 600px) {
+                    display: block;
+                }
             }
 
           }
@@ -718,7 +726,7 @@ section.make-a-difference{
         .are-you-ready-text-2-mobile{
             transform: rotate(0deg);
             display: block;
-            width: 250px;
+            width: 100%;
             margin: 0 auto;
             font-size: 45px;
             margin-bottom: 20px;
@@ -771,7 +779,9 @@ section.make-a-difference{
     }
 }
 
-@media only screen and (min-width: 1025px) {
+
+
+@media only screen and (min-width: 900px) {
     section.make-a-difference{
         height: 350px;
         padding-bottom: 20px;
