@@ -660,7 +660,7 @@ section.about .right-side button {
     display: none;
   }
   section.about .right-side p {
-    max-width: 450px;
+    max-width: 500px;
   }
   section.about .right-side button {
     text-align: center;
