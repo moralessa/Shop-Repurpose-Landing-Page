@@ -201,7 +201,7 @@ section.j-o-t button:hover {
     margin: 25px auto;
   }
   section.j-o-t button {
-    font-size: 24px;
+    font-size: 20px;
     border: 1px solid #053B1F;
   }
   section.j-o-t hr {
@@ -672,8 +672,8 @@ section.about .right-side button {
     border: 1px solid #053B1F;
     padding: 10px;
     background-color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
+    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px;
     font-weight: bold;
     -webkit-box-shadow: 2px 2px 2px #053B1F;
             box-shadow: 2px 2px 2px #053B1F;
