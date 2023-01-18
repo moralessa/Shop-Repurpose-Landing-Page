@@ -27,6 +27,12 @@ body {
   background-color: #EFEDE2;
 }
 
+@media only screen and (min-width: 1025px) {
+  body {
+    background-color: white;
+  }
+}
+
 hr {
   color: #053B1F;
   margin: 0 20px;
@@ -44,6 +50,13 @@ p {
 
 section {
   padding: 0 50px;
+}
+
+@media only screen and (min-width: 1025px) {
+  img.filter-white {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
 }
 
 header {
@@ -155,6 +168,7 @@ section.j-o-t button:hover {
   }
   section.j-o-t button {
     font-size: 24px;
+    border: 1px solid #053B1F;
   }
   section.j-o-t hr {
     display: none;
@@ -176,6 +190,8 @@ section.how-it-works h2 {
   color: #053B1F;
   font-weight: 400;
   font-size: 55px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 section.how-it-works .desktop-layout {
@@ -279,17 +295,17 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   }
   section.how-it-works section.aside-image {
     display: block;
-    width: 50%;
+    width: 45%;
     max-width: 650px;
-    height: 889px;
-    background-image: url("../images/Laura Lewis JOT.png");
+    height: 650px;
+    background-image: url("../images/Fashion.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     position: absolute;
     left: 50%;
     border-radius: 0;
-    -webkit-transform: translateY(0.2%);
-            transform: translateY(0.2%);
+    z-index: -1;
   }
   section.how-it-works .mobile-slider {
     display: none;
@@ -305,14 +321,16 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   }
   section.how-it-works .desktop-layout .left-side {
     width: 45%;
+    margin: 0 0 50px 0;
   }
   section.how-it-works .desktop-layout .left-side h2 {
-    text-align: left;
-    font-size: 100px;
-    margin-bottom: 25px;
-    text-align: left;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   section.how-it-works .desktop-layout .left-side .step-container {
     display: -webkit-box;
@@ -321,6 +339,11 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
     margin-bottom: 10px;
   }
   section.how-it-works .desktop-layout .left-side .icon-container {
@@ -345,139 +368,6 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
   }
   section.how-it-works .desktop-layout .left-side .step-container:nth-child(4) .text-container p {
     margin-top: -13px;
-  }
-}
-
-@media only screen and (min-width: 1306px) {
-  .font-weight-bold {
-    font-weight: 700;
-  }
-  section.how-it-works {
-    margin: 100px 0 25px 0;
-  }
-  section.how-it-works .mobile-slider {
-    display: none;
-  }
-  section.how-it-works .desktop-layout {
-    width: 100%;
-    max-width: 1200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    padding-left: 0;
-  }
-  section.how-it-works .desktop-layout .left-side {
-    width: 45%;
-  }
-  section.how-it-works .desktop-layout .left-side h2 {
-    text-align: left;
-    font-size: 100px;
-    margin-bottom: 25px;
-    text-align: left;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  section.how-it-works .desktop-layout .left-side .step-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 10px;
-  }
-  section.how-it-works .desktop-layout .left-side .icon-container {
-    margin-right: 20px;
-  }
-  section.how-it-works .desktop-layout .left-side .icon-container svg {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    border-radius: 15px;
-    margin-bottom: 15px;
-  }
-  section.how-it-works .desktop-layout .left-side .text-container {
-    float: right;
-  }
-  section.how-it-works .desktop-layout .left-side .step-container:nth-child(2) .text-container p {
-    margin-top: -7px;
-  }
-  section.how-it-works .desktop-layout .left-side .step-container:nth-child(3) .text-container p {
-    margin-top: -12px;
-  }
-  section.how-it-works .desktop-layout .left-side .step-container:nth-child(4) .text-container p {
-    margin-top: -13px;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .font-weight-bold {
-    font-weight: 700;
-  }
-  section.how-it-works {
-    margin: 100px 0 25px 0;
-  }
-  section.how-it-works section.aside-image {
-    display: block;
-    width: 50%;
-    max-width: 650px;
-    height: 889px;
-    background-image: url("../images/Laura Lewis JOT.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 47%;
-    border-radius: 0;
-    -webkit-transform: translateY(0.11%);
-            transform: translateY(0.11%);
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .font-weight-bold {
-    font-weight: 700;
-  }
-  section.how-it-works {
-    margin: 100px 0 25px 0;
-  }
-  section.how-it-works section.aside-image {
-    display: block;
-    width: 50%;
-    max-width: 650px;
-    height: 889px;
-    background-image: url("../images/Laura Lewis JOT.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 47%;
-    border-radius: 0;
-    -webkit-transform: translateY(0.7%);
-            transform: translateY(0.7%);
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  .font-weight-bold {
-    font-weight: 700;
-  }
-  section.how-it-works {
-    margin: 100px 0 25px 0;
-  }
-  section.how-it-works section.aside-image {
-    display: block;
-    width: 50%;
-    max-width: 650px;
-    height: 889px;
-    background-image: url("../images/Laura Lewis JOT.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 47%;
-    border-radius: 0;
-    -webkit-transform: translateY(0.35%);
-            transform: translateY(0.35%);
   }
 }
 
@@ -497,17 +387,21 @@ section.find-contact {
           align-items: center;
 }
 
-section.find-contact .find-container, section.find-contact .contact-container {
+section.find-contact .desktop-wrapper {
+  display: none;
+}
+
+section.find-contact .mobile-wrapper .find-container, section.find-contact .mobile-wrapper .contact-container {
   position: relative;
   width: 70%;
   margin: 25px 34px 50px auto;
 }
 
-section.find-contact .contact-container {
+section.find-contact .mobile-wrapper .contact-container {
   margin-bottom: 0;
 }
 
-section.find-contact h3 {
+section.find-contact .mobile-wrapper h3 {
   font-family: Shelby;
   color: #DDCDB6;
   position: absolute;
@@ -519,12 +413,12 @@ section.find-contact h3 {
           transform: rotate(-7deg);
 }
 
-section.find-contact h4 {
+section.find-contact .mobile-wrapper h4 {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-section.find-contact a {
+section.find-contact .mobile-wrapper a {
   color: white;
   font-weight: bold;
 }
@@ -532,31 +426,53 @@ section.find-contact a {
 @media only screen and (min-width: 1025px) {
   section.find-contact {
     width: 100vw;
-    padding: 75px 20px 00px 20px;
+    padding: 50px 0;
+    color: white;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  section.find-contact .wrapper {
-    width: 96%;
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 15px;
-  }
-  section.find-contact .wrapper .find-container, section.find-contact .wrapper .contact-container {
-    position: relative;
+  section.find-contact .desktop-wrapper {
     width: 100%;
-    margin: 50px auto 50px 30px;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  section.find-contact .wrapper h3 {
-    font-size: 90px;
-    position: absolute;
-    top: -100px;
-    left: -35px;
+  section.find-contact .desktop-wrapper h3 {
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+  section.find-contact .desktop-wrapper a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desktop-wrapper .contact-shop-repurpose {
+    text-align: center;
+  }
+  section.find-contact .mobile-wrapper {
+    display: none;
   }
 }
 
 section.social-good {
   background-color: white;
   height: 200px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -588,24 +504,7 @@ section.social-good div.text-container h3 {
 
 @media only screen and (min-width: 1025px) {
   section.social-good {
-    padding: 150px;
-    margin-bottom: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  section.social-good div.text-container h3 {
-    font-size: 40px;
-    text-align: unset;
-    width: unset;
-    margin: unset;
-  }
-  section.social-good div.text-container h2 {
-    font-family: Shelby;
-    margin-left: 60%;
-    margin-top: 15px;
-    font-size: 90px;
-    font-weight: 400;
+    display: none;
   }
 }
 
@@ -662,6 +561,10 @@ section.about .right-side .sponsers .sponser-container img {
   width: 60px;
 }
 
+section.about .right-side button {
+  display: none;
+}
+
 @media only screen and (min-width: 661px) {
   section.about .right-side .sponsers {
     margin: -17px auto;
@@ -681,7 +584,7 @@ section.about .right-side .sponsers .sponser-container img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: auto;
+    margin: 90px auto;
     position: relative;
   }
   section.about .left-side {
@@ -693,6 +596,7 @@ section.about .right-side .sponsers .sponser-container img {
     background-size: cover;
     position: absolute;
     border-radius: 0;
+    z-index: -1;
   }
   section.about .right-side {
     display: -webkit-box;
@@ -713,23 +617,43 @@ section.about .right-side .sponsers .sponser-container img {
   section.about .right-side h2 {
     font-size: 40px;
   }
+  section.about .right-side h4 {
+    display: none;
+  }
   section.about .right-side .sponsers {
-    margin-top: -10px;
+    display: none;
   }
-  section.about .right-side .sponser-container {
-    margin: 0 15px;
+  section.about .right-side button {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    -webkit-box-shadow: 2px 2px 2px #053B1F;
+            box-shadow: 2px 2px 2px #053B1F;
+    border-radius: 5px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+    color: inherit;
   }
-}
-
-@media only screen and (min-width: 1317px) {
-  section.about .right-side {
-    left: 56%;
+  section.about .right-side button a {
+    color: inherit;
+    text-decoration: none;
   }
-}
-
-@media only screen and (min-width: 1412px) {
-  section.about .right-side {
-    left: 59%;
+  section.about .right-side button:hover {
+    background-color: #053B1F;
+    color: white;
+    border: 1px solid white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -866,6 +790,12 @@ section.make-a-difference div.container button:hover {
   }
 }
 
+@media only screen and (min-width: 1025px) {
+  section.make-a-difference {
+    display: none;
+  }
+}
+
 footer {
   background-color: white;
   padding: 10px 20px;
@@ -952,6 +882,9 @@ footer div.footer-container .social-media .icon-container .social-icon:nth-child
 }
 
 @media only screen and (min-width: 1025px) {
+  footer {
+    background-color: #053B1F;
+  }
   footer div.footer-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -967,11 +900,25 @@ footer div.footer-container .social-media .icon-container .social-icon:nth-child
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    width: 190px;
   }
   footer div.footer-container div.contact-info {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  footer div.footer-container div.contact-info ul li {
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+  }
+  footer div.footer-container div.contact-info ul li:hover {
+    opacity: .5;
+  }
+  footer div.footer-container div.contact-info ul li a {
+    color: white;
+  }
+  footer div.footer-container div.contact-info ul li a h4 {
+    color: white;
   }
   footer div.footer-container div.contact-info ul li:nth-child(2), footer div.footer-container div.contact-info ul li:nth-child(3) {
     line-height: 30px;
@@ -987,6 +934,8 @@ footer div.footer-container .social-media .icon-container .social-icon:nth-child
   }
   footer div.footer-container div.social-media h4 {
     display: block;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
 /*# sourceMappingURL=styles.css.map */
