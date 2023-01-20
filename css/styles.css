@@ -53,13 +53,7 @@ html, body {
 }
 
 body {
-  background-color: #EFEDE2;
-}
-
-@media only screen and (min-width: 1025px) {
-  body {
-    background-color: white;
-  }
+  background-color: white;
 }
 
 hr {
@@ -81,11 +75,9 @@ section {
   padding: 0 50px;
 }
 
-@media only screen and (min-width: 1025px) {
-  img.filter-white {
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
-  }
+img.filter-white {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 b {
@@ -162,7 +154,7 @@ section.j-o-t button {
   margin: auto;
   margin-bottom: 50px;
   border: none;
-  padding: 10px;
+  padding: 14px;
   background-color: white;
   font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -174,6 +166,7 @@ section.j-o-t button {
   transition: all 500ms ease-in-out;
   cursor: pointer;
   color: inherit;
+  border: 1px solid #053B1F;
 }
 
 section.j-o-t button a {
@@ -201,7 +194,7 @@ section.j-o-t button:hover {
     margin: 25px auto;
   }
   section.j-o-t button {
-    font-size: 20px;
+    font-size: 18px;
     border: 1px solid #053B1F;
   }
   section.j-o-t hr {
@@ -406,55 +399,61 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
 }
 
 section.find-contact {
-  background-color: #053B1F;
-  padding: 70px 20px;
+  width: 100vw;
+  padding: 50px 0;
   color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #053B1F;
+}
+
+section.find-contact .desktop-wrapper {
+  width: 100%;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  row-gap: 20px;
 }
 
-section.find-contact .desktop-wrapper {
+section.find-contact .desktop-wrapper h3 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+section.find-contact .desktop-wrapper a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desktop-wrapper .contact-shop-repurpose {
+  text-align: center;
+}
+
+section.find-contact .desktop-wrapper .contact-shop-repurpose p {
+  width: 90%;
+  margin: auto;
+}
+
+section.find-contact .mobile-wrapper {
   display: none;
-}
-
-section.find-contact .mobile-wrapper .find-container, section.find-contact .mobile-wrapper .contact-container {
-  position: relative;
-  width: 70%;
-  margin: 25px 34px 50px auto;
-}
-
-section.find-contact .mobile-wrapper .contact-container {
-  margin-bottom: 0;
-}
-
-section.find-contact .mobile-wrapper h3 {
-  font-family: Shelby;
-  color: #DDCDB6;
-  position: absolute;
-  top: -60px;
-  left: -30px;
-  font-size: 55px;
-  font-weight: 400;
-  -webkit-transform: rotate(-7deg);
-          transform: rotate(-7deg);
-}
-
-section.find-contact .mobile-wrapper h4 {
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-section.find-contact .mobile-wrapper a {
-  color: white;
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -481,6 +480,11 @@ section.find-contact .mobile-wrapper a {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
   }
   section.find-contact .desktop-wrapper h3 {
     color: white;
@@ -490,7 +494,7 @@ section.find-contact .mobile-wrapper a {
   }
   section.find-contact .desktop-wrapper a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 600;
   }
   section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desktop-wrapper .contact-shop-repurpose {
@@ -519,6 +523,7 @@ section.social-good {
           align-items: center;
   padding: 20px;
   text-align: center;
+  display: none;
 }
 
 section.social-good div.text-container {
@@ -557,16 +562,18 @@ section.about .right-side {
 }
 
 section.about .right-side h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Shelby;
   margin-bottom: 20px;
+  font-size: 55px;
 }
 
 section.about .right-side h4 {
   color: black;
-  font-family: Shelby;
+  font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 30px;
   margin-top: 5px;
+  display: none;
 }
 
 section.about .right-side h4 span {
@@ -574,36 +581,38 @@ section.about .right-side h4 span {
   margin-left: 15px;
 }
 
-section.about .right-side .sponsers {
+section.about .right-side button {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: -17px;
+  margin: auto;
+  border: 1px solid #053B1F;
+  padding: 14px;
+  background-color: white;
+  font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 2px #053B1F;
+          box-shadow: 2px 2px 2px #053B1F;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  color: inherit;
 }
 
-section.about .right-side .sponsers .sponser-container {
-  width: 33%;
+section.about .right-side button a {
+  color: inherit;
+  text-decoration: none;
 }
 
-section.about .right-side .sponsers .sponser-container img {
-  width: 60px;
-}
-
-section.about .right-side button {
-  display: none;
-}
-
-@media only screen and (min-width: 661px) {
-  section.about .right-side .sponsers {
-    margin: -17px auto;
-    width: 60%;
-  }
+section.about .right-side button:hover {
+  background-color: #053B1F;
+  color: white;
+  border: 1px solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -656,50 +665,22 @@ section.about .right-side button {
   section.about .right-side h4 {
     display: none;
   }
-  section.about .right-side .sponsers {
-    display: none;
-  }
   section.about .right-side p {
+<<<<<<< HEAD
     max-width: 500px;
+=======
+    max-width: 514px;
+>>>>>>> changes_1_20
   }
   section.about .right-side button {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
     margin-bottom: 50px;
-    border: 1px solid #053B1F;
-    padding: 10px;
-    background-color: white;
-    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    -webkit-box-shadow: 2px 2px 2px #053B1F;
-            box-shadow: 2px 2px 2px #053B1F;
-    border-radius: 5px;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-    cursor: pointer;
-    color: inherit;
-  }
-  section.about .right-side button a {
-    color: inherit;
-    text-decoration: none;
-  }
-  section.about .right-side button:hover {
-    background-color: #053B1F;
-    color: white;
-    border: 1px solid white;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    font-size: 18px;
   }
 }
 
 section.make-a-difference {
-  height: 250px;
-  background-color: #053B1F;
   position: relative;
+  display: none;
 }
 
 section.make-a-difference div.container {
@@ -740,7 +721,7 @@ section.make-a-difference div.container h2 {
 
 section.make-a-difference div.container h3 {
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 20px;
   display: none;
@@ -755,7 +736,7 @@ section.make-a-difference div.container button {
   border: none;
   padding: 10px;
   background-color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bold;
   -webkit-box-shadow: 2px 2px 2px #ddcdb6;
@@ -765,6 +746,7 @@ section.make-a-difference div.container button {
   transition: all 500ms ease-in-out;
   cursor: pointer;
   color: inherit;
+  border: 1px solid #053B1F;
 }
 
 section.make-a-difference div.container button a {
@@ -782,9 +764,7 @@ section.make-a-difference div.container button:hover {
 
 @media only screen and (min-width: 900px) {
   section.make-a-difference {
-    height: 350px;
-    padding-bottom: 20px;
-    margin-top: 32px;
+    height: 170.9px;
   }
   section.make-a-difference div.container {
     width: 100%;
@@ -794,7 +774,7 @@ section.make-a-difference div.container button:hover {
             transform: translate(-50%);
   }
   section.make-a-difference div.container .are-you-ready-text-2 {
-    display: block;
+    display: none;
     font-size: 67px;
     width: unset;
     margin: auto;
@@ -824,8 +804,8 @@ section.make-a-difference div.container button:hover {
     position: static;
     text-align: center;
     font-size: 24px;
-    -webkit-box-shadow: 2px 2px 2px #ddcdb6;
-            box-shadow: 2px 2px 2px #ddcdb6;
+    -webkit-box-shadow: 2px 2px 2px #053B1F;
+            box-shadow: 2px 2px 2px #053B1F;
   }
 }
 
@@ -836,8 +816,8 @@ section.make-a-difference div.container button:hover {
 }
 
 footer {
-  background-color: white;
   padding: 10px 20px;
+  background-color: #053B1F;
 }
 
 footer div.footer-container {
@@ -867,6 +847,23 @@ footer div.footer-container .contact-info ul {
   list-style-type: none;
 }
 
+footer div.footer-container .contact-info ul li {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+footer div.footer-container .contact-info ul li:hover {
+  opacity: .5;
+}
+
+footer div.footer-container .contact-info ul li a {
+  color: white;
+}
+
+footer div.footer-container .contact-info ul li a h4 {
+  color: white;
+}
+
 footer div.footer-container .contact-info li {
   margin: 5px 0;
 }
@@ -877,7 +874,7 @@ footer div.footer-container .contact-info a {
 }
 
 footer div.footer-container .contact-info a h4 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
   color: black;
 }
 
@@ -921,9 +918,6 @@ footer div.footer-container .social-media .icon-container .social-icon:nth-child
 }
 
 @media only screen and (min-width: 1025px) {
-  footer {
-    background-color: #053B1F;
-  }
   footer div.footer-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -933,7 +927,7 @@ footer div.footer-container .social-media .icon-container .social-icon:nth-child
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
   }
   footer div.footer-container div.logo-container {
@@ -975,7 +969,7 @@ footer div.footer-container .social-media .icon-container .social-icon:nth-child
   footer div.footer-container div.social-media h4 {
     display: block;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
   }
 }
 /*# sourceMappingURL=styles.css.map */
