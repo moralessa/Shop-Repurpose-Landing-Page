@@ -565,6 +565,7 @@ section.about .right-side h2 {
   font-family: Shelby;
   margin-bottom: 20px;
   font-size: 55px;
+  font-weight: 400;
 }
 
 section.about .right-side h4 {
@@ -659,18 +660,13 @@ section.about .right-side button:hover {
   }
   section.about .right-side h2 {
     font-size: 90px;
-    font-weight: 300;
     font-family: Shelby;
   }
   section.about .right-side h4 {
     display: none;
   }
   section.about .right-side p {
-<<<<<<< HEAD
-    max-width: 500px;
-=======
     max-width: 514px;
->>>>>>> changes_1_20
   }
   section.about .right-side button {
     margin-bottom: 50px;
