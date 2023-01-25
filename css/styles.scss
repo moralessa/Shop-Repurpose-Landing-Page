@@ -1,6 +1,7 @@
 $darkBeige: #DDCDB6;
 $beigeBackground: #EFEDE2;
 $green: #053B1F;
+$black: #000;
 // @import url('https://fonts.googleapis.com/css2?family=Monteserrat:wght@300;400;500;600;700&display=swap');
 
 @font-face {
@@ -310,25 +311,39 @@ section.how-it-works{
        }
     }
 }
+
+/* Makes image with the three girls the same as the one in the about section */
+@media only screen and (max-width: 1199px) {
+    section.how-it-works{
+        section.aside-image{
+            position: absolute;
+        }
+    }
+}
+
 @media only screen and (min-width: 1025px) {
     .font-weight-bold{
         font-weight: 700;
     }
     section.how-it-works{ 
-        margin: 100px 0 25px 0;
+        margin: 100px 0 0px 0; //100px 0 25px 0;
+        .right-side{
+            width: 49%;
+        }
         section.aside-image{
             display: block;
-            width: 45%;
-            max-width: 650px;
+            width: 100%; //45%;
+            max-width: 650px;//589px;
             height: 650px;
-            background-image: url("../images/Fashion.jpg");
+            background-image: url("../images/BRIGHTER FINAL IMAGE FOR FLYER.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
-            position: absolute;
-            left: 50%;
+            // position: absolute;
+            // left: 50%;
             border-radius: 0;
             z-index: -1;
+            border: 1px solid $green;
         }
         .mobile-slider{
             display: none;
@@ -339,6 +354,7 @@ section.how-it-works{
             display: flex;
             margin: auto;
             padding-left: 0; //15px
+            justify-content: space-between;
             .left-side{
                 width: 45%;
                 margin: 0 0 50px 0;
@@ -600,6 +616,7 @@ section.about{
             position: absolute;
             border-radius: 0;//15px
             z-index: -1;
+            border: 1px solid $green;
         }
 
         .right-side{
@@ -762,7 +779,7 @@ section.make-a-difference{
 
 footer{
     padding: 10px 20px;
-    background-color: $green;
+    background-color: $black;
 
     div.footer-container{
         width: 100%;
