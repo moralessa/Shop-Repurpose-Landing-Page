@@ -779,7 +779,7 @@ section.make-a-difference{
 
 footer{
     padding: 10px 20px;
-    background-color: $green;
+    background-color: $black;
 
     div.footer-container{
         width: 100%;
@@ -792,6 +792,7 @@ footer{
     
             & img{
                 width: 100%;
+                height: auto;
             }
         }
     
@@ -843,7 +844,7 @@ footer{
                 align-items: center;
     
                 .social-icon{
-                    width: 60px;
+                    width: 40px; //60px;
                     transition: all 500ms ease-in-out;
     
                     &:hover{
@@ -876,7 +877,7 @@ footer{
 
             div.logo-container{
                 order: 2;
-                width: 190px;
+                width: 123px; //190px;
             }
 
             div.contact-info{
