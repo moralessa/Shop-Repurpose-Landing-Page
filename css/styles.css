@@ -345,7 +345,7 @@ section.find-contact {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #053B1F;
+  background-color: #000;
 }
 section.find-contact .desktop-wrapper {
   width: 100%;
@@ -506,7 +506,7 @@ section.about .right-side button:hover {
     height: 454px;
     align-items: center;
     margin: 90px auto;
-    position: relative;
+    justify-content: space-between;
   }
   section.about .left-side {
     display: block;
@@ -515,7 +515,6 @@ section.about .right-side button:hover {
     height: 641px;
     background-image: url("../images/Priyanka JOT.jpeg");
     background-size: cover;
-    position: absolute;
     border-radius: 0;
     z-index: -1;
     border: 1px solid #053B1F;
@@ -525,9 +524,7 @@ section.about .right-side button:hover {
     flex-direction: column;
     align-items: center;
     width: 45%;
-    position: absolute;
     left: 53%;
-    padding-right: 15px;
   }
   section.about .right-side h2 {
     font-size: 90px;

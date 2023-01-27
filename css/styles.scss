@@ -415,7 +415,7 @@ section.find-contact{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: $green;
+    background-color: $black;
 
     .desktop-wrapper{
         width: 100%;
@@ -604,7 +604,8 @@ section.about{
         height: 454px; //604px
         align-items: center;
         margin: 90px auto;
-        position: relative;
+        //position: relative;
+        justify-content: space-between;
 
         .left-side{
             display: block;
@@ -613,7 +614,7 @@ section.about{
             height: 641px;
             background-image: url('../images/Priyanka\ JOT.jpeg');
             background-size: cover;
-            position: absolute;
+            //position: absolute;
             border-radius: 0;//15px
             z-index: -1;
             border: 1px solid $green;
@@ -624,9 +625,9 @@ section.about{
             flex-direction: column;
             align-items: center;
             width: 45%;
-            position: absolute;
+            //position: absolute;
             left: 53%; //55%
-            padding-right: 15px;
+            //padding-right: 15px;
 
             h2{
                 font-size: 90px;
