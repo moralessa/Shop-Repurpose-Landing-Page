@@ -109,7 +109,7 @@ img.filter-white{
 }
 
 b{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 //Header 
@@ -218,6 +218,9 @@ section.j-o-t{
         background-color: white;
         font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
         font-size: 16px;
+        @media only screen and (min-width: 1025px) {
+            font-size: 18px;
+        }
         font-weight: bold;
         box-shadow: 2px 2px 2px $green;
         border-radius: 5px;
@@ -389,7 +392,7 @@ section.how-it-works{
         font-weight: 700;
     }
     section.how-it-works{ 
-        margin: 100px 0 0px 0; //100px 0 25px 0;
+        margin: 80px 0 0px 0; //100px 0 25px 0;
         .right-side{
             width: 49%;
         }
@@ -423,7 +426,7 @@ section.how-it-works{
                 margin: 0 0 50px 0;
                 h2{
                     text-align: unset;
-                    font-size: 90px; //50px
+                    font-size: 100px; //50px
                     font-weight: 400;
                     margin-bottom: 15px;
                     font-family: Shelby;
@@ -672,8 +675,7 @@ section.about{
         width: 100%;
         max-width: 1200px;
         display: flex;
-        height: 454px; //604px
-        margin: 90px auto;
+        margin: 0 auto;
         justify-content: space-between;
 
         .left-side{
@@ -692,6 +694,7 @@ section.about{
         .right-side{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             // align-items: center;
             width: 45%;
             left: 53%; //55%
@@ -945,6 +948,7 @@ footer{
             width: 100%;
             max-width: 1200px;
             margin: auto;
+            padding: 20px 0;
 
 
             div.logo-container{
