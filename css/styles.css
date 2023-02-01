@@ -521,7 +521,7 @@ section.find-contact .desktop-wrapper {
 
 section.find-contact .desktop-wrapper h3 {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Avenir', Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
 }
@@ -540,6 +540,12 @@ section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desk
 section.find-contact .desktop-wrapper .contact-shop-repurpose p {
   width: 90%;
   margin: auto;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.find-contact .desktop-wrapper h3 {
+    font-size: 20px;
+  }
 }
 
 section.find-contact .mobile-wrapper {

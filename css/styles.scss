@@ -493,7 +493,7 @@ section.find-contact{
         row-gap: 20px;
         h3{
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
             font-family: 'Avenir', Arial, Helvetica, sans-serif;
             margin-bottom: 10px;
@@ -514,6 +514,12 @@ section.find-contact{
             p{
                 width: 90%;
                 margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 1025px) {
+            h3{
+                font-size: 20px;
             }
         }
     }
