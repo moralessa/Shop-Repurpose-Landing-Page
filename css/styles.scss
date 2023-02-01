@@ -2,6 +2,7 @@ $darkBeige: #DDCDB6;
 $beigeBackground: #EFEDE2;
 $green: #053B1F;
 $black: #000;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Monteserrat:wght@300;400;500;600;700&display=swap');
 
 @font-face {
@@ -46,6 +47,25 @@ $black: #000;
 }
 
 
+/* */
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: url('../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro-It';
+    src: url('../fonts/AvenirNextLTPro-It.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'AvenirNextLTPro-Bold';
+    src: url('../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 700;
+}
+
+
 
 *, *::after, *::before{
     box-sizing: border-box;
@@ -69,11 +89,13 @@ hr{
 
 h1, h2, h3, h4, h5 h6{
     color: #053B1F;
-    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+    // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 
 p{
-    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+    // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+    font-family: AvenirNextLTPro-Regular;
     font-size: 17px;
 }
 
@@ -129,6 +151,47 @@ section.video-container{
         max-width: 1200px;
         margin: 10px auto 50px auto;
         height: 550px
+    }
+}
+
+section.j-o-t-button-section{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-top: 55px;
+    width: 100%;
+    padding: 0;
+    .line{
+        width: 40%;
+        margin: 0 20px;
+    }
+    button{
+        min-width: 132px;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        border: none;
+        padding: 14px;
+        background-color: white;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 2px 2px 2px $green;
+        border-radius: 5px;
+        transition: all 500ms ease-in-out;
+        cursor: pointer;
+        color: inherit;
+        border: 1px solid $green;
+        a {
+        color: inherit;
+        text-decoration: none;
+        }
+        &:hover{
+            background-color: #053B1F;
+            color: white;
+            border: 1px solid white;
+            box-shadow: none;
+        }
     }
 }
 
@@ -209,7 +272,7 @@ section.how-it-works{
     margin: 50px 0 25px 0;
     position: relative;
     h2{
-        font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
+        font-family: Shelby; 
         text-align: center;
         color: $green;
         font-weight: 400; //600
@@ -359,18 +422,18 @@ section.how-it-works{
                 width: 45%;
                 margin: 0 0 50px 0;
                 h2{
-                    text-align: center;
+                    text-align: unset;
                     font-size: 90px; //50px
                     font-weight: 400;
                     margin-bottom: 15px;
-                    font-family: Shelby, 'Times New Roman', Times, serif;
+                    font-family: Shelby;
                     transform: rotate(0deg);
                 }
                 .step-container{
                     display: flex;
-                    align-items: center;
+                    // align-items: center;
                     flex-direction: column;
-                    text-align: center;
+                    // text-align: center;
                     margin-bottom: 10px;
                 }
 
@@ -427,7 +490,8 @@ section.find-contact{
         h3{
             color: white;
             font-size: 20px;
-            font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+            // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+            font-family: AvenirNextLTPro-Regular;
             margin-bottom: 10px;
         }
 
@@ -438,6 +502,7 @@ section.find-contact{
         }
 
         .find-drop-off, .contact-shop-repurpose{
+            font-family: AvenirNextLTPro-Regular;
             text-align: center;
         }
         
@@ -475,7 +540,8 @@ section.find-contact{
             h3{
                 color: white;
                 font-size: 20px;
-                font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+                // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+                font-family: AvenirNextLTPro-Regular;
                 margin-bottom: 10px;
             }
 
@@ -538,13 +604,15 @@ section.social-good{
 section.about{
     padding: 50px 0;
     margin: 0 20px;
-    text-align: center;
     .left-side{
         display: none;
     }
     .right-side{
-        width: 100%;
+        width: 80%; //100%
+        margin: auto;
+        text-align: center;
         h2{
+            text-align: center;
             font-family:  Shelby; //'Monteserrat', Arial, Helvetica, sans-serif;
             margin-bottom: 20px;
             font-size: 55px;
@@ -564,6 +632,9 @@ section.about{
                 margin-left: 15px;
             }
         }
+        .our-belief{
+            margin-top: 24px;
+        }
 
         button{
             text-align: center;
@@ -572,7 +643,7 @@ section.about{
             border: 1px solid $green;
             padding: 14px;
             background-color: white;
-            font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+            font-family: 'Libre Baskerville', serif;
             font-size: 16px;
             font-weight: bold;
             box-shadow: 2px 2px 2px $green;
@@ -602,9 +673,7 @@ section.about{
         max-width: 1200px;
         display: flex;
         height: 454px; //604px
-        align-items: center;
         margin: 90px auto;
-        //position: relative;
         justify-content: space-between;
 
         .left-side{
@@ -623,15 +692,15 @@ section.about{
         .right-side{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            // align-items: center;
             width: 45%;
-            //position: absolute;
             left: 53%; //55%
-            //padding-right: 15px;
+            margin: unset;
+            text-align: unset;
 
             h2{
                 font-size: 90px;
-                font-family: Shelby; //'Britanny', 'Times New Roman', Times, serif
+                font-family: Shelby; 
             }
 
             h4{
@@ -645,6 +714,7 @@ section.about{
             button{
                 margin-bottom: 50px;
                 font-size: 18px;
+                margin: 24px auto;
             }
         }
  }      
@@ -673,7 +743,7 @@ section.make-a-difference{
             margin-bottom: 20px;
         }
         h2{
-            font-family:Shelby; //'Britanny', 'Times New Roman', Times, serif
+            font-family:Shelby; 
             color: $darkBeige;
             text-align: center;
             transform: rotate(-5deg);
@@ -781,6 +851,7 @@ section.make-a-difference{
 footer{
     padding: 10px 20px;
     background-color: $black;
+    font-family: 'Libre Baskerville', serif;
 
     div.footer-container{
         width: 100%;
@@ -824,7 +895,7 @@ footer{
            }
     
            a h4{
-            font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+            // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
             color: black;
            }
         }
@@ -908,7 +979,7 @@ footer{
                 h4{
                     display: block;
                     color: white;
-                    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+                    // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
                 }
                 order: 3;
                 border-top: none;
