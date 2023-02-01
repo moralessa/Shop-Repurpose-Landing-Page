@@ -43,21 +43,21 @@
 
 /* */
 @font-face {
-  font-family: 'AvenirNextLTPro-Regular';
+  font-family: 'Avenir';
   src: url("../fonts/AvenirNextLTPro-Regular.otf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'AvenirNextLTPro-It';
+  font-family: 'Avenir';
   src: url("../fonts/AvenirNextLTPro-It.otf");
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'AvenirNextLTPro-Bold';
+  font-family: 'Avenir';
   src: url("../fonts/AvenirNextLTPro-Bold.otf");
-  font-weight: 700;
+  font-weight: 600;
 }
 
 *, *::after, *::before {
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 h6 {
 }
 
 p {
-  font-family: AvenirNextLTPro-Regular;
+  font-family: 'Avenir', Arial, Helvetica, sans-serif;
   font-size: 17px;
 }
 
@@ -506,6 +506,7 @@ section.find-contact {
 section.find-contact .desktop-wrapper {
   width: 100%;
   max-width: 1200px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,7 +522,7 @@ section.find-contact .desktop-wrapper {
 section.find-contact .desktop-wrapper h3 {
   color: white;
   font-size: 20px;
-  font-family: AvenirNextLTPro-Regular;
+  font-family: 'Avenir', Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -532,7 +533,7 @@ section.find-contact .desktop-wrapper a {
 }
 
 section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desktop-wrapper .contact-shop-repurpose {
-  font-family: AvenirNextLTPro-Regular;
+  font-family: 'Avenir', Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -578,7 +579,7 @@ section.find-contact .mobile-wrapper {
   section.find-contact .desktop-wrapper h3 {
     color: white;
     font-size: 20px;
-    font-family: AvenirNextLTPro-Regular;
+    font-family: 'Avenir', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
   }
   section.find-contact .desktop-wrapper a {
