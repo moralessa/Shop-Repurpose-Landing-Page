@@ -175,6 +175,9 @@ section.j-o-t-button-section{
         background-color: white;
         font-family: 'Libre Baskerville', serif;
         font-size: 16px;
+        @media only screen and (min-width: 1025px) {
+            font-size: 18px;
+        }
         font-weight: bold;
         box-shadow: 2px 2px 2px $green;
         border-radius: 5px;
@@ -218,9 +221,6 @@ section.j-o-t{
         background-color: white;
         font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
         font-size: 16px;
-        @media only screen and (min-width: 1025px) {
-            font-size: 18px;
-        }
         font-weight: bold;
         box-shadow: 2px 2px 2px $green;
         border-radius: 5px;
