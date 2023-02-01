@@ -492,7 +492,7 @@ section.find-contact{
         row-gap: 20px;
         h3{
             color: white;
-            font-size: 20px;
+            font-size: 17px;
             // font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
             font-family: AvenirNextLTPro-Regular;
             margin-bottom: 10px;
@@ -634,6 +634,9 @@ section.about{
                 font-size: 24px;
                 margin-left: 15px;
             }
+        }
+        b{
+            font-family: AvenirNextLTPro-Bold;
         }
         .our-belief{
             margin-top: 24px;
