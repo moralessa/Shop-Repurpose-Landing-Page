@@ -104,8 +104,7 @@ section{
 }
 
 img.filter-white{
-        filter: brightness(0) invert(1);
-    
+    filter: brightness(0) invert(1);
 }
 
 b{
@@ -119,7 +118,7 @@ header{
     align-items: center;
 
     img{
-        width: 150px; //was 90px
+        width: 150px;
         height: auto;
     }
 
@@ -315,18 +314,17 @@ section.how-it-works{
             align-items: center;
             flex-direction: column;
 
-            & svg{
+            img{
                 display: block;
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                padding: 10px;
                 background-color: white;
                 border-radius: 15px;
                 margin-bottom: 15px;
-            }
 
-            & .first-svg-icon-mobile{
-                width: 90px;
-                height: 90px;
+                &.third-icon{
+                    width: 70px;
+                }
             }
 
             h5{
@@ -441,15 +439,16 @@ section.how-it-works{
                 }
 
                 .icon-container{
-                    margin-right: 20px;
-                    svg{
+                    margin: 5px 0;
+                    img{
                         display: block;
                         width: 80px;
-                        height: 80px;
+                        padding: 10px;
                         background-color: white;
                         border-radius: 15px;
                         margin-bottom: 15px;
-                        
+                        float: left;
+                   
                     }
                 }
 
@@ -512,7 +511,7 @@ section.find-contact{
         
         .contact-shop-repurpose{
             p{
-                width: 90%;
+                width: 95%;
                 margin: auto;
             }
         }
@@ -564,6 +563,15 @@ section.find-contact{
             .find-drop-off, .contact-shop-repurpose{
                 text-align: center;
             }
+
+            .contact-shop-repurpose{
+                width: 300px;
+                p{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+    
         }
 
         .mobile-wrapper{

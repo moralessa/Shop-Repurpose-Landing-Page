@@ -336,18 +336,17 @@ section.how-it-works .mobile-slider .swiper-slide {
           flex-direction: column;
 }
 
-section.how-it-works .mobile-slider .swiper-slide svg {
+section.how-it-works .mobile-slider .swiper-slide img {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  padding: 10px;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 15px;
 }
 
-section.how-it-works .mobile-slider .swiper-slide .first-svg-icon-mobile {
-  width: 90px;
-  height: 90px;
+section.how-it-works .mobile-slider .swiper-slide img.third-icon {
+  width: 70px;
 }
 
 section.how-it-works .mobile-slider .swiper-slide h5 {
@@ -462,15 +461,16 @@ section.how-it-works .mobile-slider .swiper-pagination-bullet.swiper-pagination-
     margin-bottom: 10px;
   }
   section.how-it-works .desktop-layout .left-side .icon-container {
-    margin-right: 20px;
+    margin: 5px 0;
   }
-  section.how-it-works .desktop-layout .left-side .icon-container svg {
+  section.how-it-works .desktop-layout .left-side .icon-container img {
     display: block;
     width: 80px;
-    height: 80px;
+    padding: 10px;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 15px;
+    float: left;
   }
   section.how-it-works .desktop-layout .left-side .text-container {
     float: right;
@@ -538,7 +538,7 @@ section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desk
 }
 
 section.find-contact .desktop-wrapper .contact-shop-repurpose p {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -595,6 +595,13 @@ section.find-contact .mobile-wrapper {
   }
   section.find-contact .desktop-wrapper .find-drop-off, section.find-contact .desktop-wrapper .contact-shop-repurpose {
     text-align: center;
+  }
+  section.find-contact .desktop-wrapper .contact-shop-repurpose {
+    width: 300px;
+  }
+  section.find-contact .desktop-wrapper .contact-shop-repurpose p {
+    width: 100%;
+    margin: auto;
   }
   section.find-contact .mobile-wrapper {
     display: none;
