@@ -356,24 +356,6 @@ section.how-it-works{
 
     }
 }
-//Fix for the three dot button
-@media only screen and (max-width: 324px) {
-    section.how-it-works{
-       .mobile-slider{
-        height: 268px;
-        margin-bottom: 90px;
-       }
-    }
-}
-//Fix for the three dot button
-@media only screen and (max-width: 280px) {
-    section.how-it-works{
-       .mobile-slider{
-        height: 298px;
-        margin-bottom: 151px;
-       }
-    }
-}
 
 /* Makes image with the three girls the same as the one in the about section */
 @media only screen and (max-width: 1199px) {
