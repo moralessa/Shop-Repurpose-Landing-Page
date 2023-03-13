@@ -134,14 +134,20 @@ header{
 
 //Video Container
 section.video-container{
-    margin: 0; //0 20px
     display: flex;
     justify-content: center;
-    padding: 0 25px;
+    position: relative;
+    height: 450px;
+    max-width: 90%;
+    margin: auto;
 }
 
 .video-container iframe{
     width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 @media only screen and (min-width: 1025px) {
