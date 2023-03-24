@@ -77,9 +77,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="preload" href="{{ 'theme.min.css' | asset_url }}" as="style">
     {{ 'theme.min.css' | asset_url | stylesheet_tag }}
   {% endif %}
-    <!-- Landing PageCSS ================================================== -->
+    <!-- Landing Page CSS & JS================================================== -->
   {%if template == 'page.landing-page'%}
     {{ 'landing-page.css' | asset_url | stylesheet_tag }}
+    {{ 'landing-page-swiper.js' | asset_url | script_tag }}
+
   {% endif %}
   {{ 'custom.css' | asset_url | stylesheet_tag }}
 
