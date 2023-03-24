@@ -1,0 +1,225 @@
+ <!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <script id="plg-round-up" src="https://hello.pledge.to/assets/shop/round-up.js" async></script>
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB48K84');</script>
+<!-- End Google Tag Manager -->
+  
+  <!-- Global site tag (gtag.js) - Google Ads: 10785086068 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10785086068"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10785086068'); </script>
+ {%- render 'layouthub_header' -%}
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  {%- comment -%}DemoStoreRequirements{%- endcomment -%}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  {% if settings.favicon != blank %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '180x180', crop: 'center' }}" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ settings.favicon | img_url: '180x180', crop: 'center'  }}">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ settings.favicon | img_url: '180x180', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ settings.favicon | img_url: '32x32', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="194x194" href="{{ settings.favicon | img_url: '194x194', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ settings.favicon | img_url: '192x192', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ settings.favicon | img_url: '16x16', crop: 'center'  }}">
+  {% endif %}
+
+  <!-- Title and description ================================================== -->
+  <title>
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  
+  <!-- Helpers ================================================== -->
+  {% render 'social-meta-tags' %}
+  <link rel="canonical" href="{{ canonical_url }}"/>
+  {% if template contains 'product' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  {% else %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endif %}
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+
+  <!-- CSS ================================================== -->
+  {% render 'css-variables' %}
+
+  {% if template == 'index' %}
+    <link rel="preload" href="{{ 'theme-index.min.css' | asset_url }}" as="style">
+    {{ 'theme-index.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'collection' %}
+    <link rel="preload" href="{{ 'theme-collection.min.css' | asset_url }}" as="style">
+    {{ 'theme-collection.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'list-collections' %}
+    <link rel="preload" href="{{ 'theme-collection-list.min.css' | asset_url }}" as="style">
+    {{ 'theme-collection-list.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'product' %}
+    <link rel="preload" href="{{ 'theme-product.min.css' | asset_url }}" as="style">
+    {{ 'theme-product.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'blog' %}
+    <link rel="preload" href="{{ 'theme-blog.min.css' | asset_url }}" as="style">
+    {{ 'theme-blog.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'cart' %}
+    <link rel="preload" href="{{ 'theme-cart.min.css' | asset_url }}" as="style">
+    {{ 'theme-cart.min.css' | asset_url | stylesheet_tag }}
+  {% else %}
+    <link rel="preload" href="{{ 'theme.min.css' | asset_url }}" as="style">
+    {{ 'theme.min.css' | asset_url | stylesheet_tag }}
+  {% endif %}
+
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
+
+  <!-- Header hook for plugins ================================================== -->
+  {{ content_for_header }}
+
+  {% if template contains 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+  {% endif %}
+<script id="sg-js-global-vars">
+                        sgGlobalVars = {{ shop.metafields['sg-cc']['sg-metafield'] | json }};
+                        if(sgGlobalVars) {
+                            sgGlobalVars.cart = {{ cart | json }};
+                            sgGlobalVars.currentProduct = {{ product | json }};
+                            sgGlobalVars.isAdmin = {% if content_for_header contains 'adminBarInjector' or content_for_header contains 'previewBarInjector' %}true{% else %}false{% endif %};
+                        }
+                    </script></head>
+
+<script id="plg-round-up" src="https://hello.pledge.to/assets/shop/round-up.js" async></script>
+
+{% comment %}
+  Add the page template as a class for easy page or template specific styling.
+{% endcomment %}
+<body id="{{ page_title | handle }}" class="{% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} ">
+  <script>
+    var classList = document.documentElement.classList;
+    classList.add('supports-js')
+    classList.add('js');
+    classList.remove('no-js');
+    {% comment %}It's supported well enough, we won't detect it{% endcomment %}
+  </script>
+
+  {% comment %}
+  Cart Drawer, also used by 'Quick View', 'LogIn', and 'Search'
+  {% endcomment %}
+  {% render 'right-drawer' %}
+
+  <div id="DrawerOverlay" class="drawer-overlay"></div>
+
+  <div id="PageContainer" data-cart-action="{{ settings.ajax_cart_method }}">
+    {% section 'announcement-bar' %}
+
+    {% section 'header' %}
+
+    {% unless template == 'collection' or template == 'list-collections' or template contains 'contact' %}
+      {% if settings.enable_breadcrumbs %}
+        {% render 'breadcrumb' %}
+      {% endif %}
+    {% endunless%}
+    
+    {% if template == 'index' %}
+      <div class="flow-homepage">
+    {% else %}
+     {% unless template == 'collection' or template contains 'contact' or template == 'list-collections' %}<div class="wrapper main-content page-main--wrapper">{% endunless %}
+    {% endif %}
+
+    <!--LayoutHub-Workspace-Start-->{{ content_for_layout }}<!--LayoutHub-Workspace-End-->
+   </div>
+
+    <div class="footer-wrapper">
+      {% section 'footer--newsletter' %}
+      {% section 'footer' %}
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    window.lazySizesConfig.rias = window.lazySizesConfig.rias || {};
+
+    // configure available widths to replace with the {width} placeholder
+    window.lazySizesConfig.rias.widths = [150, 300, 600, 900, 1200, 1500, 1800, 2100];
+
+    document.addEventListener('lazyriasmodifyoptions', function (e) {
+      // convert width to width specification for shopify
+      var widthmap = {}
+      var aspect = parseFloat(e.target.dataset.aspectratio); // classList.contains('lazyload-square');
+      var forceHeight = parseInt(e.target.dataset.forceHeight, 10);
+      window.lazySizesConfig.rias.widths.forEach(function (width) {
+        if (forceHeight) {
+          var heightForWidth = width / aspect;
+          var newWidth, newHeight;
+          if (heightForWidth < forceHeight) {
+            newWidth = forceHeight / heightForWidth * width;
+          } else {
+            newWidth = width;
+          }
+          newHeight = newWidth / aspect;
+          widthmap[width] = newWidth.toFixed(0) + 'x' + newHeight.toFixed(0)
+        } else {
+          widthmap[width] = width.toString() + 'x';
+        }
+      });
+      e.detail.widthmap = widthmap;
+    });
+  </script>
+
+  <script defer type="module" src="{{ 'theme.min.js' | asset_url }}"></script>
+  <script defer nomodule src="{{ 'theme.legacy.min.js' | asset_url }}"></script>
+
+  {% render 'verification-popup' %}
+  {% render 'popup' %}
+
+  <script type="application/json" id="wetheme-global">
+    {
+      {% comment %}Translations that will be used in javascript section handling{% endcomment %}
+      "translations": {
+        "addToCart": {{ 'products.product.add_to_cart' | t | json }},
+        "added": {{ 'products.product.added' | t | json }},
+        "soldOut": {{ 'products.product.sold_out' | t | json }},
+        "unavailable": {{ 'products.product.unavailable' | t | json }},
+        "no_results_html": {{ 'general.search.no_results_html' | t | json }},
+        "results_for_html": {{ 'general.search.results_for_html' | t | json }},
+        "products": {{ 'general.search.products' | t | json }},
+        "pages": {{ 'general.search.pages' | t | json }},
+        "collections": {{ 'general.search.collections' | t | json }},
+        "articles": {{ 'general.search.articles' | t | json }},
+        "quick_shop": {{ 'products.product.quick_shop' | t | json }},
+        "view_options": {{ 'products.product.view_options' | t | json }},
+        "read_more_html": {{ 'products.product.read_more_html' | t | json }},
+        "read_less_html": {{ 'products.product.read_less_html' | t | json }},
+        "youve_viewed": {{ 'collections.paginate.youve_viewed' | t | json }},
+        "load_more": {{ 'collections.paginate.load_more' | t | json }},
+        "productAdded": {{ 'products.product.added' | t | json }},
+        "loading": {{ 'collections.paginate.loading' | t | json }},
+        "giftwrap_label": {{ 'products.general.giftwrap_label' | t | json }},
+        "yes": {{ 'products.general.yes' | t | json }}
+      },
+      "moneyFormat": {{ shop.money_format | json }},
+      "giftwrapProduct": {{ settings.giftwrap_product_selector | json }},
+      "giftwrapEnabled": {{ settings.giftwrap_enable | json }}
+    }
+  </script>
+{%- render 'layouthub_footer' -%} 
+ 
+{% include 'swymSnippet' %}
+
+{% render 'collection-filter-v2' %}
+ 
+    
+</body>
+  
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB48K84"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+</html>
